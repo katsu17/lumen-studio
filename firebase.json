@@ -1,0 +1,29 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/index",
+        "destination": "./index.html"
+      },
+      {
+        "source": "/portforlio",
+        "destination": "/portforlio.html"
+      },
+      {
+        "source": "/price",
+        "destination": "/price.html"
+      },
+      {
+        "source": "/contact",
+        "destination": "/contact.html"
+      }
+    ]
+
+  }
+}
