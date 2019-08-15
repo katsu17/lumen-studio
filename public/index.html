@@ -1,59 +1,109 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/6.3.4/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/6.3.4/firebase-auth.js"></script>
-    <script defer src="/__/firebase/6.3.4/firebase-database.js"></script>
-    <script defer src="/__/firebase/6.3.4/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/6.3.4/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumen Studio</title>
 
-    <link rel="stylesheet" href="/css/style.css">
-    
-  </head>
-  <body>
-    <header>
-      <div class="menuShadow" onclick="togglemenu()"></div>
-      <div class="flexSpaceBetween">
-        <a class="headerLogo" href="./">wantsuca</a>
-        <!-- <img class="headerImage" src="/public/image/wantsukaTop2.jpg" alt=""> -->
-        <div onclick="togglemenu()" class="flexAlignItemsCenter"><img class="menuIcon" src="/image/menuIcon.svg" alt=""></div>
-        <ul class="flexCenter textAlignCenter pcMenus">
-          <li class="menu"><a href="./whisky">Whisky</a></li>
-          <li class="menu"><a href="./cocktail">Cocktail</a></li>
-        </ul>
-        <ul class="displayFlex spMenus">
-          <li class="menu"><a href="./whisky">Whisky</a></li>
-          <li class="menu"><a href="./cocktail">Cocktail</a></li>
-        </ul>
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/6.3.4/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/6.3.4/firebase-auth.js"></script>
+  <script defer src="/__/firebase/6.3.4/firebase-database.js"></script>
+  <script defer src="/__/firebase/6.3.4/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/6.3.4/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="./js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <header class="themeColorBackGround">
+    <div class="menuShadow" onclick="togglemenu()"></div>
+    <div class="flexSpaceBetween">
+      <a class="headerLogo" href="./">
+        <img src="/image/Lumens-LOGO-draft.jpg" alt="">
+      </a>
+      <!-- <img class="headerImage" src="/public/image/wantsukaTop2.jpg" alt=""> -->
+      <div onclick="togglemenu()" class="flexAlignItemsCenter"><img class="menuIcon" src="/image/menuIcon.svg" alt=""></div>
+      <ul class="flexCenter textAlignCenter pcMenus">
+        <li class="menu"><a href="./">ホーム</a></li>
+        <li class="menu"><a href="#特徴">特徴</a></li>
+        <li class="menu"><a href="#サービス">サービス</a></li>
+        <li class="menu"><a href="./portfolio">制作実績</a></li>
+        <li class="menu"><a href="./price">価格</a></li>
+        <li class="menu"><a href="./contact">お問い合わせ</a></li>
+      </ul>
+      <ul class="displayFlex spMenus">
+        <li class="menu"><a href="./whisky">Whisky</a></li>
+        <li class="menu"><a href="./cocktail">Cocktail</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="topWrapper">
+    <div class="wrap">
+      <video id="topBackGroundVideo" playsinline autoplay loop muted>
+        <source src="https://video.wixstatic.com/video/11062b_2f15a230bb5148e2b97a01cebba8a974/1080p/mp4/file.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="topHeading">
+      <h1>動画でしか伝わらない</h1>
+      <h1>トキメキ・感動・メッセージ</h1>
+      <h1>ルーメンスタジオがお手伝いします</h1>
+      <div>
+        <a class="toContactButton" href="./contact">お問い合わせ・お見積もり</a>
       </div>
-    </header>
+    </div>
+  </div>
 
-
-    <footer>
-      <div class="container">
-        <div class="footerSection">
-          <div class="footerAbouts">
-            <h1>wantsuca</h1>
-            open 9:00pm ～ last<br>
-            close　monday <br>
-          </div>
-          <div class="snsIcons">
-            <a href="https://www.instagram.com/wantsuca/"><img class="spSnsIcon" src="/image/instagramIcon.svg" alt=""></a>
-            <a href="https://www.facebook.com/Wantsuca-315615705502533/"><img class="spSnsIcon" src="/image/facebookIcon.svg"
-                alt=""></a>
-          </div>
+  <div class="secondSectionWrapper themeColor">
+    <div class="fontSize25px">特徴</div>
+    <div class="textAlignLeft">
+      <div class="storngPoint flexSpaceAround">
+        <div class="strongPointTitle">低価格</div>
+        <div class="strongPointDiscription fontSize20px">​高品質のプロダクトにリーズナブルな料金設定</div>
+      </div>
+      <div class="storngPoint flexSpaceAround">
+        <div class="strongPointTitle">高品質</div>
+        <div class="strongPointDiscription fontSize20px">​経験豊富の撮影チーム、多国籍のクリエティブな製作チーム</div>
+      </div>
+      <div class="storngPoint flexSpaceAround">
+        <div class="strongPointTitle">提案力</div>
+        <div class="strongPointDiscription fontSize20px">アピールポイントを正確にキャッチ、PR効果を最大化</div>
+      </div>
+      <div class="storngPoint flexSpaceAround">
+        <div class="strongPointTitle">多言語対応</div>
+        <div class="strongPointDiscription fontSize20px">
+          英語・中国語・韓国語・ロシア語・スペイン語などの字幕<br>
+          翻訳も対応し、ターゲットの地域別にアプローチが可能
         </div>
       </div>
-      <div class="textAlignCenter colorGray">Copyright ©Lumen Studio powered by BASE, Inc.</div>
-      <a href="./contact"><div class="textAlignCenter colorGray">お問い合わせ</div></a>
-    </footer>
-  </body>
+    </div>
+  </div>
+
+
+  <footer class="themeColorBackGround">
+    <div class="container">
+      <div class="footerSection">
+        <div class="snsIcons">
+          <a href="https://www.instagram.com/wantsuca/"><img class="spSnsIcon" src="/image/instagramIcon.svg" alt=""></a>
+          <a href="https://www.facebook.com/Wantsuca-315615705502533/"><img class="spSnsIcon" src="/image/facebookIcon.svg"
+              alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="textAlignCenter colorGray">Copyright ©Lumen Studio powered by BASE, Inc.</div>
+    <a href="./contact">
+      <div class="textAlignCenter colorGray">お問い合わせ</div>
+    </a>
+  </footer>
+</body>
+
 </html>
