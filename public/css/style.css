@@ -49,8 +49,73 @@ li {
     width: 410px;
     margin: 0 auto;
     transition: all 1s;
-
 }
+
+.toPricePageButton {
+    text-align: center;
+    padding: 10px 20px;
+    border: solid rgba(250, 226, 15, 1) 1px;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    width: 410px;
+    margin: 0 auto;
+    transition: all 1s;
+}
+
+.fourthSectionHeading {
+    text-align: center;
+    font-size: 30px;
+    padding: 50px 0;
+}
+
+.fourthStrongPointWrap {
+    width: 340px;
+    padding: 60px 0;
+}
+
+.fourthSectionBackgroundYellow {
+    position: relative;
+    right: -800px;
+    background-color:  rgba(250, 226, 15, 1);
+    width: 700px;
+    height: 450px;
+}
+
+.fourthSectionBackgroundThemeColor {
+    position: relative;
+    right: -40px;
+    background-color: rgba(8, 114, 158, 1);
+    width: 700px;
+    height: 450px;
+}
+
+.forthSectionStrongPoint {
+    font-size: 28px;
+    padding-bottom: 30px;
+}
+
+.fourthSectionStrongPointDescription {
+    font-size: 20px;
+}
+
+.fourthSectionMovie {
+    top: 60px;
+    left: -450px;
+    z-index: 1;
+}
+
+.fourthSectionMovie2{
+    top: 60px;
+    right: -400px;
+}
+
+.fourthSectionMovie3 {
+    padding: 100px 0;
+}
+
 
 .topContactButton:hover {
     color:#000;
@@ -75,11 +140,45 @@ li {
     padding: 10px 0;
 }
 
+.thirdSectionWrapper {
+    padding: 100px 0;
+    color: #fff;
+}
+
+.thirdSectionIcon {
+    color: rgba(250, 226, 15, 1);
+    margin: 0 auto;
+    width: 57px;
+    height: 57px;
+}
+
+.services {
+    text-align: center;
+    padding-bottom: 100px;
+    width: 700px;
+    padding: 50px;
+}
+
+.servicesHeding {
+    font-size: 32px;
+    padding: 20px 0;
+}
+
+.servicesDescription {
+    font-size: 25px;
+}
+
+.flexDirectiionColumn {
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
     width: 100%;
     color: #999;
     margin: 50px 0 0 0;
-    position: fixed;
+    padding: 50px 0;
+    /* position: fixed; */
     bottom: 0px;
 }
 
@@ -166,7 +265,30 @@ footer {
     line-height: 200px;
 }
 
+.strongPointWrap {
+    width: 200px
+}
+
+.strongPointUnderLine {
+    background-color: rgba(250, 226, 15, 1);
+    width: 75px;
+    height: 2px;
+    position: relative;
+    top: 80px;
+    left: 60px;
+}
+
+.strongPointUnderLineForFiveWords {
+    background-color: rgba(250, 226, 15, 1);
+    width: 125px;
+    height: 2px;
+    position: relative;
+    top: 80px;
+    left: 38px;
+}
+
 .strongPointTitle {
+    position: absolute;
     text-align: center;
     height: 100px;
     line-height: 100px;
