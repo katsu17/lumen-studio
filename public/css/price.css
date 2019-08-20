@@ -1,0 +1,21 @@
+@import url("style.css");
+
+.priceWrapper {
+    padding: 150px 0;
+    text-align: center;
+}
+
+.section {
+    text-align: center;
+    padding: 100px 300px;
+}
+
+.priceDiscription {
+    padding: 0 20px;
+    text-align: left;
+    width: 400px;
+}
+
+.buttonWrap {
+    margin: 50px 0;
+}

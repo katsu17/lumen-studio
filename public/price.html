@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumen Studio</title>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/6.3.4/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/6.3.4/firebase-auth.js"></script>
+  <script defer src="/__/firebase/6.3.4/firebase-database.js"></script>
+  <script defer src="/__/firebase/6.3.4/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/6.3.4/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/price.css">
+  <script src="./js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <header class="themeColorBackGround">
+    <div class="menuShadow" onclick="togglemenu()"></div>
+    <div class="flexSpaceBetween">
+      <a class="headerLogo" href="./">
+        <img src="/image/Lumens-LOGO-draft.jpg" alt="">
+      </a>
+      <!-- <img class="headerImage" src="/public/image/wantsukaTop2.jpg" alt=""> -->
+      <div onclick="togglemenu()" class="flexAlignItemsCenter"><img class="menuIcon" src="/image/menuIcon.svg" alt=""></div>
+      <ul class="flexCenter textAlignCenter pcMenus">
+        <li class="menu"><a href="./">ホーム</a></li>
+        <li class="menu"><a href="./">特徴</a></li>
+        <li class="menu"><a href="./">サービス</a></li>
+        <li class="menu"><a href="./portfolio">制作実績</a></li>
+        <li class="menu"><a href="./price">価格</a></li>
+        <li class="menu"><a href="./contact">お問い合わせ</a></li>
+      </ul>
+      <ul class="displayFlex spMenus">
+        <li class="menu"><a href="./">ホーム</a></li>
+        <li class="menu"><a href="./">特徴</a></li>
+        <li class="menu"><a href="./">サービス</a></li>
+        <li class="menu"><a href="./portfolio">制作実績</a></li>
+        <li class="menu"><a href="./price">価格</a></li>
+        <li class="menu"><a href="./contact">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="priceWrapper">
+    <h1>価格</h1>
+    <div>
+      <div>ルーメンではお客様の予算内で、ハイクオリティーの動画を製作いたします。</div>
+      <div>また、実写映像の中にアニメーションを組み込む事も承っております。</div>
+      <div>お気軽にご相談や、お見積もりについてお問い合わせください。</div>
+    </div>
+    <div>
+      <a class="toContactButton" href="./contact">お問い合わせ</a>
+    </div>
+  </div>
+
+  <div class="section themeColorBackGround">
+    <div>
+      <h1>セミナー・講演レコーディング</h1>
+      <p>5万円〜</p>
+    </div>
+    <div class="flexSpaceAround">
+      <div>
+        <iframe class="Video1423133661--playerContainer" data-player-name="YouTube" frameborder="0" allowfullscreen="1"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player"
+          width="401px" height="239px" src="https://www.youtube.com/embed/fjgK_1UA2Dg?autoplay=0&amp;mute=0&amp;controls=1&amp;loop=0&amp;origin=https%3A%2F%2Fwww.lumen-studio.jp&amp;playsinline=1&amp;enablejsapi=1&amp;widgetid=1"
+          id="widget2">
+        </iframe>
+      </div>
+      <div class="priceDiscription">
+        <h3>セミナー・講演レコーディング</h3>
+        <div>
+          企業イメージ・ブランドイメージや、信頼感をより得れるインタビュー・お客様の声動画を制作いたします。撮影・編集が含まれております。ローカライズや翻訳対応で、多言語対応が可能です。また海外から日本へローカライズする事も可能です。
+        </div>
+      </div>
+    </div>
+
+    <div class="buttonWrap">
+      <a class="toContactButton" href="./contact">お問い合わせ</a>
+    </div>
+  </div>
+
+
+  <footer class="themeColorBackGround">
+    <div class="textAlignCenter colorGray">
+      Copyright ©Lumen Studio powered by BASE, Inc.
+    </div>
+    <a href="./contact">
+      <div class="textAlignCenter colorGray">
+        お問い合わせ
+      </div>
+    </a>
+  </footer>
+</body>
+
+</html>

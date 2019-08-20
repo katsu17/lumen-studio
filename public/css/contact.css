@@ -1,0 +1,61 @@
+@import url("style.css");
+@import url("portfolio.css");
+
+.contactWrapper {
+    padding: 200px 350px 0 350px;
+}
+
+.contactFormName {
+    background-color: rgba(8, 114, 158, 1);
+    font-size: 20px;
+    margin: 0 20px 20px 0;
+    width: 200px;
+    height: 35px;
+}
+
+.contactForm {
+    margin: 0 20px 20px 0;
+    background-color: rgba(8, 114, 158, 1);
+    font-size: 20px;
+    width: 420px;
+    height: 35px;
+}
+
+.messageForm {
+    margin: 0 20px 20px 0;
+    background-color: rgba(8, 114, 158, 1);
+    font-size: 20px;
+    width: 420px;
+    height: 200px;
+}
+
+.sendButton {
+    text-align: right;
+    padding: 10px 20px;
+    background-color: rgba(232, 208, 0, 1);
+    border: solid rgba(250, 226, 15, 1) 1px;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 auto;
+    transition: all 1s;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+input, textarea {
+  outline: none;
+  border: 1px solid #aaa;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #fff;
+}
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 7px #1abc9c;
+  border: 1px solid #1abc9c;
+}

@@ -1,0 +1,18 @@
+@import url("portfolio.css");
+
+iframe {
+    display: block;
+}
+
+.portFolioWrapper {
+    padding: 100px 300px;
+    text-align: center;
+}
+
+.section {
+    margin: 100px 0;
+}
+
+.videos {
+    margin-top: 50px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lumen Studio</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/6.3.4/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/6.3.4/firebase-auth.js"></script>
+    <script defer src="/__/firebase/6.3.4/firebase-database.js"></script>
+    <script defer src="/__/firebase/6.3.4/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/6.3.4/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/privacy-policy.css">
+    <script src="./js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header class="themeColorBackGround">
+        <div class="menuShadow" onclick="togglemenu()"></div>
+        <div class="flexSpaceBetween">
+            <a class="headerLogo" href="./">
+                <img src="/image/Lumens-LOGO-draft.jpg" alt="">
+            </a>
+            <!-- <img class="headerImage" src="/public/image/wantsukaTop2.jpg" alt=""> -->
+            <div onclick="togglemenu()" class="flexAlignItemsCenter"><img class="menuIcon" src="/image/menuIcon.svg"
+                    alt=""></div>
+            <ul class="flexCenter textAlignCenter pcMenus">
+                <li class="menu"><a href="./">ホーム</a></li>
+                <li class="menu"><a href="./">特徴</a></li>
+                <li class="menu"><a href="./">サービス</a></li>
+                <li class="menu"><a href="./portfolio">制作実績</a></li>
+                <li class="menu"><a href="./price">価格</a></li>
+                <li class="menu"><a href="./contact">お問い合わせ</a></li>
+            </ul>
+            <ul class="displayFlex spMenus">
+                <li class="menu"><a href="./">ホーム</a></li>
+                <li class="menu"><a href="./">特徴</a></li>
+                <li class="menu"><a href="./">サービス</a></li>
+                <li class="menu"><a href="./portfolio">制作実績</a></li>
+                <li class="menu"><a href="./price">価格</a></li>
+                <li class="menu"><a href="./contact">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="privacyPolicyWrapper">
+        <br>
+        <br>
+        <br>
+        <h1 class="textAlignCenter">個人情報保護方針</h1>
+        <br>
+        <br>
+        <br>
+        <div>株式会社ベイス（以下「当社」）は、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、全従業員に個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進致します。</div>
+        ​<br>
+        <h3>個人情報の管理</h3>
+        <br>
+        <div>当社はお客さまからご提供いただいた個人情報を、紛失、破壊、社外への不正な流出、改ざん、不正なアクセスから保護 するために、合理的な範囲内で安全対策に努めます。</div>
+        <br>
+        <h3>個人情報の利用目的</h3>
+        <br>
+        <div>
+            当社は、取得した個人情報を以下の目的のために利用させていただきます。<br>
+            (1)採用及びクリエイターの登録に関する手続並びに選考のため<br>
+            (2)サービスの提供に伴う各種連絡及び商品・サービスのご案内のため<br>
+            ※ダイレクトメール・電子メール・電話等<br>
+            (3)当社サービスの改善や新サービスの開発等に役立てるため<br>
+            (4)当社サービスに関して、個人を識別できない形式に加工した統計データを作成するため<br>
+        </div>
+        <br>
+        <h3>個人情報の第三者への提供の禁止</h3>
+        <br>
+        <div>
+            当社は、お客さまよりお預かりした個人情報を適切に管理し、個人情報を第三者に提供いたしません。但し、以下のいずれかに該当する場合は、個人情報の保護が十分に図られている企業を選定し、個人情報保護の契約を締結する等必要かつ適切な処置を講じたうえで対応いたします。<br>
+            <br>
+            ・お客さまの同意がある場合<br>
+            <br>
+            ・利用目的を達成するために必要な範囲内で、コンテンツ提供者、および業務委託先に提供する場合<br>
+            <br>
+            ・法令に基づき提供することが必要である場合<br>
+        </div>
+        <br>
+        <h3>個人情報の確認・訂正・削除</h3>
+        <br>
+        <div>
+            当社がお聞きした個人情報は、お客さまがその内容や利用目的の確認を要望される場合には、お客さまご自身のご要望であることが確認でき次第、速やかに対応いたします。
+            (但し、法令上これをお断りすることができる場合を除きます。)<br>
+            ご確認の結果、個人情報の内容に誤り又は変更点などがあった場合には、 お客さまのご指摘に従い、速やかに訂正・追加、 または削除いたします。
+        </div>
+        <br>
+        <h3>変更及び通知について</h3>
+        <br>
+        <div>
+            当ウェブサイトは、プライバシーポリシーを事前の予告無く変更することがあります。<br>
+            また、本プライバシーポリシーは、当ウェブサイトからリンクされている他のウェブサイトにおけるセキュリティ情報の取り扱い内容に関しての責任は負いません。
+        </div>
+    </div>
+    <footer class="themeColorBackGround">
+        <div class="textAlignCenter colorGray">
+            Copyright ©Lumen Studio powered by BASE, Inc.
+        </div>
+        <a href="./contact">
+            <div class="textAlignCenter colorGray">
+                お問い合わせ
+            </div>
+        </a>
+    </footer>
+</body>
+
+</html>

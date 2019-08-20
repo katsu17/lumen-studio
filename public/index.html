@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lumen Studio</title>
 
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <!-- update the version number as needed -->
   <script defer src="/__/firebase/6.3.4/firebase-app.js"></script>
   <!-- include only the Firebase features as you need -->
@@ -13,6 +14,18 @@
   <script defer src="/__/firebase/6.3.4/firebase-database.js"></script>
   <script defer src="/__/firebase/6.3.4/firebase-messaging.js"></script>
   <script defer src="/__/firebase/6.3.4/firebase-storage.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $('a[href^=#]').click(function(){
+        var speed = 1000;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+      })
+    });
+    </script>
   <!-- initialize the SDK after all desired features are loaded -->
   <script defer src="/__/firebase/init.js"></script>
 
@@ -34,8 +47,8 @@
       <div onclick="togglemenu()" class="flexAlignItemsCenter"><img class="menuIcon" src="/image/menuIcon.svg" alt=""></div>
       <ul class="flexCenter textAlignCenter pcMenus">
         <li class="menu"><a href="./">ホーム</a></li>
-        <li class="menu"><a href="#特徴">特徴</a></li>
-        <li class="menu"><a href="#サービス">サービス</a></li>
+        <li class="menu"><a href="/#strongPoint">特徴</a></li>
+        <li class="menu"><a href="/#service">サービス</a></li>
         <li class="menu"><a href="./portfolio">制作実績</a></li>
         <li class="menu"><a href="./price">価格</a></li>
         <li class="menu"><a href="./contact">お問い合わせ</a></li>
@@ -64,7 +77,7 @@
   </div>
 
   <div class="secondSectionWrapper themeColor">
-    <div class="fontSize25px">特徴</div>
+    <div class="fontSize25px" id="strongPoint">特徴</div>
     <div class="textAlignLeft">
       <div class="storngPoint flexSpaceAround">
         <div class="strongPointWrap">
@@ -102,7 +115,7 @@
 
   <div class="thirdSectionWrapper themeColorBackGround">
     <div class="textAlignCenter">
-      <h1>サービス</h1>
+      <h1 id="service">サービス</h1>
     </div>
     <div class="flexDirectiionColumn">
       <div class="displayFlex marginAuto">
@@ -236,20 +249,39 @@
     </div>
   </div>
 
-  <div class="themeColorBackGround marginAuto">
-    <div class="displayFlex">
-      <iframe scrolling="no" frameborder="0" allow="autoplay; camera; microphone; geolocation; vr" allowtransparency="true"
-        allowfullscreen="" name="comp-jqxkm39t" style="width:566px;height:318px;min-height:318px;min-width:566px;display:block;position:absolute;z-index:"
-        title="Wix Video" aria-label="Wix Video" id="comp-jqxkm39tiframe" class="fourthSectionMovie3" src="https://vod-server.wix.com/widget.html?cacheKiller=1565888344447&amp;compId=comp-jqxkm39t&amp;deviceType=desktop&amp;externalId=82e83e2d-2099-447c-aaf3-84378864165a&amp;height=318&amp;instance=kEep9MNzMMOmWXA7yhXVNj4VVPWNRywUKOyXpmJBpRw.eyJpbnN0YW5jZUlkIjoiNmIxYzQwOTItZDI0Mi00Y2Y3LThlZWYtOGVhM2YzNDM3NzRiIiwiYXBwRGVmSWQiOiIxNDQwOTU5NS1mMDc2LTQ3NTMtODMwMy05YTg2ZjlmNzE0NjkiLCJtZXRhU2l0ZUlkIjoiNGIxZThiNjctZjBmOC00ZDhiLTgxMDMtM2Y1NTc5NDFjZjI1Iiwic2lnbkRhdGUiOiIyMDE5LTA4LTE3VDA1OjMwOjQwLjU4NloiLCJ1aWQiOm51bGwsInBlcm1pc3Npb25zIjpudWxsLCJpcEFuZFBvcnQiOiIxMTguMjM4LjIxOS4xMDUvNTI2NTgiLCJ2ZW5kb3JQcm9kdWN0SWQiOiJ2aWRlb19taW5pbWFsIiwiZGVtb01vZGUiOmZhbHNlLCJvcmlnaW5JbnN0YW5jZUlkIjoiNTNhZmYyMGQtMzQzZC00MGRmLWE0YzgtMDE0M2FiYjUzMzYxIiwiYWlkIjoiMmU5MjQ3MjktMDU3My00ZDU0LWJlNTQtZjM1ZGYyNWIyYjUwIiwiYmlUb2tlbiI6IjIwMDJjYmY1LTIyYmEtMDE3Yy0wZmVjLWIxZjY4YTAyYjg2ZSIsInNpdGVPd25lcklkIjoiODJlODNlMmQtMjA5OS00NDdjLWFhZjMtODQzNzg4NjQxNjVhIn0&amp;locale=ja&amp;pageId=xvqu2&amp;siteRevision=240&amp;viewMode=site&amp;width=566">
-      </iframe>
-      <div class="fourthStrongPointWrap marginAuto">
-          <div class="forthSectionStrongPoint colorWhite">
-            セミナー実写映像
-          </div>
-          <div class="fourthSectionStrongPointDescription colorWhite">
-            実写映像や説明文にエフェクトを加えた、商品や雰囲気を直感的に伝える動画
-          </div>
+  <div class="fourthSectionBackgroundThemeColor2">
+    <div class="flexSpaceAround">
+      <div>
+        <iframe scrolling="no" frameborder="0" allow="autoplay; camera; microphone; geolocation; vr" allowtransparency="true"
+          allowfullscreen="" name="comp-jqxkm39t" style="width:566px;height:318px;min-height:318px;min-width:566px;display:block;position:absolute;z-index:"
+          title="Wix Video" aria-label="Wix Video" id="comp-jqxkm39tiframe" class="fourthSectionMovie3" src="https://vod-server.wix.com/widget.html?cacheKiller=1565888344447&amp;compId=comp-jqxkm39t&amp;deviceType=desktop&amp;externalId=82e83e2d-2099-447c-aaf3-84378864165a&amp;height=318&amp;instance=kEep9MNzMMOmWXA7yhXVNj4VVPWNRywUKOyXpmJBpRw.eyJpbnN0YW5jZUlkIjoiNmIxYzQwOTItZDI0Mi00Y2Y3LThlZWYtOGVhM2YzNDM3NzRiIiwiYXBwRGVmSWQiOiIxNDQwOTU5NS1mMDc2LTQ3NTMtODMwMy05YTg2ZjlmNzE0NjkiLCJtZXRhU2l0ZUlkIjoiNGIxZThiNjctZjBmOC00ZDhiLTgxMDMtM2Y1NTc5NDFjZjI1Iiwic2lnbkRhdGUiOiIyMDE5LTA4LTE3VDA1OjMwOjQwLjU4NloiLCJ1aWQiOm51bGwsInBlcm1pc3Npb25zIjpudWxsLCJpcEFuZFBvcnQiOiIxMTguMjM4LjIxOS4xMDUvNTI2NTgiLCJ2ZW5kb3JQcm9kdWN0SWQiOiJ2aWRlb19taW5pbWFsIiwiZGVtb01vZGUiOmZhbHNlLCJvcmlnaW5JbnN0YW5jZUlkIjoiNTNhZmYyMGQtMzQzZC00MGRmLWE0YzgtMDE0M2FiYjUzMzYxIiwiYWlkIjoiMmU5MjQ3MjktMDU3My00ZDU0LWJlNTQtZjM1ZGYyNWIyYjUwIiwiYmlUb2tlbiI6IjIwMDJjYmY1LTIyYmEtMDE3Yy0wZmVjLWIxZjY4YTAyYjg2ZSIsInNpdGVPd25lcklkIjoiODJlODNlMmQtMjA5OS00NDdjLWFhZjMtODQzNzg4NjQxNjVhIn0&amp;locale=ja&amp;pageId=xvqu2&amp;siteRevision=240&amp;viewMode=site&amp;width=566">
+        </iframe>
+      </div>
+      <div class="fourthStrongPointWrap">
+        <div class="forthSectionStrongPoint colorWhite">
+          実写映像＋アニメーション動画
         </div>
+        <div class="fourthSectionStrongPointDescription colorWhite">
+          お客様のニーズに合わせて柔軟に対応し、<br>
+          実写映像、アニメーション、イラストが混在し、<br>
+          あらゆる面から表現するタイプの動画<br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="textAlignCenter themeColor">
+    <div>
+      <h1>お見積り・お問い合わせ</h1>
+    </div>
+    <div>
+      弊社サービスについてもっと知りたい場合は、<br>
+      お気軽にお問い合わせ下さい。<br>
+      <h1>・・・</h1>
+      お客様の予算内で最適の動画をご提案させて頂きます。
+    </div>
+    <div>
+      <a class="toContactButton" href="./contact">お問い合わせ・お見積もり</a>
     </div>
   </div>
 

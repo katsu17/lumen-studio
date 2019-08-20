@@ -9,11 +9,7 @@
     "rewrites": [
       {
         "source": "/index",
-        "destination": "./index.html"
-      },
-      {
-        "source": "/portforlio",
-        "destination": "/portforlio.html"
+        "destination": "/index.html"
       },
       {
         "source": "/price",
@@ -22,7 +18,16 @@
       {
         "source": "/contact",
         "destination": "/contact.html"
+      },
+      {
+        "source": "/portfolio",
+        "destination": "/portfolio.html"
+      },
+      {
+        "source": "/privacy-policy",
+        "destination": "/privacy-policy.html"
       }
+
     ]
 
   }

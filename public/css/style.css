@@ -21,8 +21,21 @@ li {
     position: absolute;
 }
 
+#strongPoint {
+    padding-top: 100px;
+    transition: all 1s;
+}
+
+#service {
+    padding-top: 100px;
+}
+
 .textAlignLeft {
     text-align: left;
+}
+
+.textAlignRight {
+    text-align: right;
 }
 
 .secondSectionWrapper {
@@ -46,7 +59,6 @@ li {
     display: inline-block;
     text-decoration: none;
     font-size: 30px;
-    width: 410px;
     margin: 0 auto;
     transition: all 1s;
 }
@@ -92,6 +104,12 @@ li {
     height: 450px;
 }
 
+.fourthSectionBackgroundThemeColor2 {
+    padding: 100px 0;
+    background-color: rgba(8, 114, 158, 1);
+    margin: 50px 0;
+}
+
 .forthSectionStrongPoint {
     font-size: 28px;
     padding-bottom: 30px;
@@ -113,7 +131,8 @@ li {
 }
 
 .fourthSectionMovie3 {
-    padding: 100px 0;
+    /* padding: 100px 0; */
+    left: 200px;
 }
 
 
