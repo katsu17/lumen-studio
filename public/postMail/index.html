@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+<meta charset="shift_jis">
+<meta http-equiv="content-style-type" content="text/css">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<link rel="stylesheet" href="../css/contact.css">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>お問い合わせフォーム</title>
+	
+	<script src="../js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	
+	<header class="themeColorBackGround">
+    <div class="menuShadow" onclick="togglemenu()"></div>
+    <div class="flexSpaceBetween">
+      <a class="headerLogo" href="./">
+        <img src="/image/Lumens-LOGO-draft.jpg" alt="">
+      </a>
+      <!-- <img class="headerImage" src="/public/image/wantsukaTop2.jpg" alt=""> -->
+      <div onclick="togglemenu()" class="flexAlignItemsCenter"><img class="menuIcon" src="/image/menuIcon.svg" alt=""></div>
+      <ul class="flexCenter textAlignCenter pcMenus">
+        <li class="menu"><a href="/">ホーム</a></li>
+        <li class="menu"><a href="/#strongPoint">特徴</a></li>
+        <li class="menu"><a href="/#service">サービス</a></li>
+        <li class="menu"><a href="/portfolio">制作実績</a></li>
+        <li class="menu"><a href="/price">価格</a></li>
+        <li class="menu"><a href="/postMail">お問い合わせ</a></li>
+      </ul>
+      <ul class="displayFlex spMenus">
+        <li class="menu"><a href="./whisky">Whisky</a></li>
+        <li class="menu"><a href="./cocktail">Cocktail</a></li>
+      </ul>
+    </div>
+  </header>
+	
+	<div class="contactWrapper">
+    <div class="textAlignCenter">
+      <img src="/image/fujiyama.jpg" alt="">
+      <div>弊社サービスについてもっと知りたい場合は、お気軽にお問い合わせください。</div>
+      <div>ヒアリング後、お客様の予算内で最適の動画をご提案させて頂きます。</div>
+    </div>
+
+    <div class="flexSpaceAround section">
+      <div>
+        <h3>所在地</h3>
+        <div>
+          〒104-0033<br>
+          東京都中央区新川1-3-3<br>
+          グリーンオーク茅場町6F
+        </div>
+        <div>
+          Tel: 03-6452-8600
+        </div>
+        <div>
+          <div>SNS</div>
+          <div>
+            <img src="/image/twitterIcon.jpg" alt="">
+            <img src="/image/facebookIcon.jpg" alt="">
+            <img src="/image/linkedinIcon.jpg" alt="">
+            <img src="/image/blockclipIcon.jpg" alt="">
+          </div>
+        </div>
+      </div>
+			
+<div id="body">
+ <h2>お問い合わせ</h2>
+ <form action="./postmail.cgi" method="post">
+ <input type="hidden" name="need" value="name email 問合せ種別">
+ <input type="hidden" name="sort" value="name email 問合せ種別 メッセージ">
+ <input type="hidden" name="match" value="email email2">
+ <div id="form-tbl">
+						
+<input type="text" name="name" size="35" value="氏名">
+メールアドレス
+		<input type="text" name="email" size="35"><br>
+		<input type="text" name="email2" size="35"> （再度入力）
+	</td>
+  </tr>
+  <tr>
+	<th>問合せ種別</th>
+	<td>
+		<input type="radio" name="問合せ種別" value="ご質問">ご質問<br>
+		<input type="radio" name="問合せ種別" value="ご相談">ご相談<br>
+		<input type="radio" name="問合せ種別" value="ご感想">ご感想<br>
+		<input type="radio" name="問合せ種別" value="ご依頼">ご依頼<br>
+		<input type="radio" name="問合せ種別" value="その他">その他
+	</td>
+  </tr>
+  <tr>
+	<th>問合せ内容</th>
+	<td><textarea name="メッセージ" rows="7" cols="55"></textarea></td>
+							</tr>
+ </table>
+ <p class="btn">
+	<input type="submit" value="送信する">
+	<input type="reset" value="リセット">
+ </p>
+ </form>
+</div>
+
+<h2>個人情報の取扱いについて</h2>
+<ol>
+<li>ご記入いただいた個人情報は、お問い合わせへの対応および確認のためのみに利用します。</li>
+<li>また、この目的のためにお問い合わせの記録を残すことがあります。</li>
+</ol>
+
+</div>
+
+<!--
+      <div>
+        <h3>お問い合わせ</h3>
+        <div class="flexSpaceBetween">
+          <input required placeholder="性" class="themeColorBackGround contactFormName" type="text">
+          <input required placeholder="名" class="themeColorBackGround contactFormName" type="text">
+        </div>
+        <div class="flexDirectiionColumn">
+          <input required placeholder="会社名" class="themeColorBackGround contactForm" type="text">
+          <input required placeholder="役職" class="themeColorBackGround contactForm" type="text">
+          <input required placeholder="メール" class="themeColorBackGround contactForm" type="email">
+          <input required placeholder="電話番号" class="themeColorBackGround contactForm" type="tel">
+          <textarea required placeholder="メッセージ" class="themeColorBackGround messageForm" name="" id="" cols="10" rows="10"></textarea>
+        </div>
+        <form action="">
+          <label for="">
+            <input type="checkbox">
+            プライバシーポリシーに同意します。
+          </label>
+          <div><a href="./privacy-policy">プライバシーポリシー</a></div>
+        </form>
+        <div class="textAlignRight"><button class="sendButton">送信</button></div>
+			</div>
+-->
+			
+    </div>
+  </div>
+	
+<!--
+<div id="head">
+	<div id="head-in"><h1>CONTACT - postmail</h1></div>
+</div>
+-->
+	
+
+	
+<footer class="themeColorBackGround">
+    <div class="textAlignCenter colorGray">
+      Copyright Lumen Studio powered by BASE, Inc.
+    </div>
+    <a href="./contact">
+      <div class="textAlignCenter colorGray">
+        お問い合わせ
+      </div>
+    </a>
+</footer>
+
+</body>
+</html>

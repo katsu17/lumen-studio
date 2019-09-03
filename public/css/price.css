@@ -1,13 +1,23 @@
 @import url("style.css");
 
-.priceWrapper {
+.priceTopWrapper {
     padding: 150px 0;
     text-align: center;
+    color: rgba(8, 114, 158, 1);
+}
+
+.priceTopDiscription {
+    margin: 20px 0;
+    font-size: 20px;
 }
 
 .section {
     text-align: center;
     padding: 100px 300px;
+}
+
+.priceDiscriptionHeader {
+    color: rgba(232, 208, 0, 1);
 }
 
 .priceDiscription {
@@ -17,5 +27,9 @@
 }
 
 .buttonWrap {
+    margin: 50px 0;
+}
+
+.priceDitail {
     margin: 50px 0;
 }
