@@ -30,6 +30,10 @@ li {
     padding-top: 100px;
 }
 
+.textDecorationNone {
+    text-decoration: none;
+}
+
 .modalContact {
     width: 200px;
 }
@@ -67,8 +71,26 @@ li {
     transition: all 0.5s;
 }
 
+.toContactButtonTextChangeThemecolor {
+    padding: 10px 20px;
+    background-color: rgba(232, 208, 0, 1);
+    border: solid rgba(250, 226, 15, 1) 1px;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
 .toContactButton:hover {
-    background-color: #fff;
+    background-color: rgba(232, 208, 0, 0);
+    color: #fff;
+}
+
+.toContactButtonTextChangeThemecolor:hover {
+    background-color: rgba(232, 208, 0, 0);
     color: rgba(8, 114, 158, 1);
 }
 
@@ -99,7 +121,7 @@ li {
 
 .fourthSectionBackgroundYellow {
     position: relative;
-    right: -800px;
+    right: -650px;
     background-color:  rgba(250, 226, 15, 1);
     width: 700px;
     height: 450px;
@@ -600,7 +622,6 @@ header {
     text-align: center;
 }
 
-
 @media screen and (min-width:720px) {
 
     .pcDrinkMenu {
@@ -680,6 +701,17 @@ header {
     .pcMap {
         width: 600px;
         height: 300px;
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+    .spHeaderLogo {
+        padding: 15px;
+    }
+
+    .spLogoImage {
+        width: 54px;
     }
     
 }

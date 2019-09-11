@@ -1,4 +1,99 @@
+@import url("style.css");
+@import url("portfolio.css");
 /* for body */
+
+#themeColorBackGround {
+    background-color: rgba(8, 114, 158, 1);
+}
+
+#themeColor {
+    color: rgba(8, 114, 158, 1);
+}
+
+#contactWrapper {
+    padding: 200px 250px 0 250px;
+}
+
+#contactFormName {
+    background-color: rgba(8, 114, 158, 1);
+    font-size: 20px;
+    margin: 0 20px 20px 0;
+    width: 200px;
+    height: 35px;
+}
+
+#contactForm {
+    margin: 0 20px 20px 0;
+    background-color: rgba(8, 114, 158, 1);
+    font-size: 20px;
+    width: 420px;
+    height: 35px;
+}
+
+#messageForm {
+    margin: 0 20px 20px 0;
+    background-color: rgba(8, 114, 158, 1);
+    font-size: 20px;
+    width: 420px;
+    height: 200px;
+}
+
+#sendButton {
+    text-align: right;
+    padding: 10px 20px;
+    background-color: rgba(232, 208, 0, 1);
+    border: solid rgba(250, 226, 15, 1) 1px;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 auto;
+    transition: all 1s;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+input {
+  font-size: 19px;
+  height: 43px;
+}
+
+textarea {
+  font-size: 19px;
+}
+
+input, textarea {
+  width: 437px;
+  margin-bottom: 5px;
+  outline: none;
+  border: 1px solid #aaa;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  display: block;
+  color: #fff;
+  background-color: rgba(8, 114, 158, 1);
+}
+
+#checkbox {
+	display: inline-block;
+	width: auto;
+}
+
+#btn {
+	display: inline-block;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 7px #1abc9c;
+  border: 1px solid #1abc9c;
+}
+
+/*postMail original*/
+
 body {
 	margin: 0;
 	padding: 0;
@@ -7,6 +102,19 @@ body {
 	color: #000;
 	font-family: Verdana,"MS PGothic",Osaka,Arial,sans-serif;
 }
+
+#toTopButton {
+	text-decoration: none;
+    color: #fff;
+    background-color: rgba(8, 114, 158, 1);
+    width: 200px;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+    border: #999;
+	width: 220px;
+}
+
 #head {
 	background: #00428e;
 	color: #fff;
@@ -23,9 +131,12 @@ h1 {
 }
 
 /* for table */
+/*
 #form-tbl {
 	margin-left: 1.5em;
 }
+*/
+
 #form {
 	border-collapse: collapse;
 	margin: 1em 0;
@@ -47,15 +158,15 @@ p.btn input {
 }
 
 /* for title */
+
+/*
 h2 {
 	font-size: 100%;
 	text-align: left;
-	border-left: solid 4px #ef002d;
-	border-bottom: 1px solid gray;
 	padding: 4px 6px;
 	margin: 1.5em 0;
-	width: 500px;
 }
+*/
 
 /* for message */
 p.msg {

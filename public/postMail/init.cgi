@@ -1,3 +1,4 @@
+
 # モジュール宣言/変数初期化
 use strict;
 my %cf;
@@ -79,7 +80,7 @@ $cf{version} = 'postmail v9.01';
 $cf{kcode} = 'sjis';
 
 # 送信先メールアドレス
-$cf{mailto} = 'lumen-studio@base-corp.co.jp';
+$cf{mailto} = 'enegoli17@gmail.com';
 
 # sendmailのパス【サーバパス】
 # → プロバイダの指定を確認のこと
@@ -105,9 +106,13 @@ $cf{send_b64} = 0;
 # → 英字のname値を日本語に自動的に置き換えます。
 # 例: 「email = xx@xx.xx」→「メールアドレス = xx@xx.xx」
 $cf{replace} = {
-		'name'    => 'お名前',
-		'email'   => 'メールアドレス',
-		'comment' => 'コメント',
+	'name' => '氏名',
+	'company' => '会社名',
+	'position' => '役職',
+	'email' => 'メールアドレス',
+	'comment' => 'コメント',
+	'phoneNumber' => '電話番号',
+	'message' => 'メッセージ'
 	};
 
 # 送信者へのメール返信
@@ -116,7 +121,7 @@ $cf{replace} = {
 $cf{auto_res} = 1;
 
 # メール件名（初期値）
-$cf{subject} = 'フォームメール';
+$cf{subject} = 'Lumen-studio HP よりお問い合わせがありました';
 
 # メール件名の外部指定（任意オプション）
 # → 複数のフォームメールで運用する場合、タグで件名指定する

@@ -8,12 +8,11 @@
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <!-- update the version number as needed -->
-  <script defer src="/__/firebase/6.3.4/firebase-app.js"></script>
-  <!-- include only the Firebase features as you need -->
+  <!-- <script defer src="/__/firebase/6.3.4/firebase-app.js"></script>
   <script defer src="/__/firebase/6.3.4/firebase-auth.js"></script>
   <script defer src="/__/firebase/6.3.4/firebase-database.js"></script>
   <script defer src="/__/firebase/6.3.4/firebase-messaging.js"></script>
-  <script defer src="/__/firebase/6.3.4/firebase-storage.js"></script>
+  <script defer src="/__/firebase/6.3.4/firebase-storage.js"></script> -->
   <script type="text/javascript">
     $(function () {
       $('a[href^=#]').click(function () {
@@ -27,10 +26,11 @@
     });
   </script>
   <!-- initialize the SDK after all desired features are loaded -->
-  <script defer src="/__/firebase/init.js"></script>
+  <!-- <script defer src="/__/firebase/init.js"></script> -->
 
   <link rel="stylesheet" href="/css/style.css">
-  <script src="./js/script.js"></script>
+  <link rel="icon" href="/image/Lumens-LOGO-draft.ico">
+  <script src="/js/script.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
 
 
@@ -40,28 +40,32 @@
   <header class="themeColorBackGround">
     <div class="menuShadow" onclick="togglemenu()"></div>
     <div class="flexSpaceBetween">
-      <a class="headerLogo" href="./">
-        <img src="/image/Lumens-LOGO-draft.jpg" alt="">
+      <a class="headerLogo spHeaderLogo" href="/">
+        <img src="/image/Lumens-LOGO-draft.jpg" alt="lumenLogo" class="spLogoImage">
       </a>
       <!-- <img class="headerImage" src="/public/image/wantsukaTop2.jpg" alt=""> -->
       <div onclick="togglemenu()" class="flexAlignItemsCenter"><img class="menuIcon" src="/image/menuIcon.svg" alt=""></div>
       <ul class="flexCenter textAlignCenter pcMenus">
-        <li class="menu"><a href="./">ホーム</a></li>
+        <li class="menu"><a href="/">ホーム</a></li>
         <li class="menu"><a href="/#strongPoint">特徴</a></li>
         <li class="menu"><a href="/#service">サービス</a></li>
-        <li class="menu"><a href="./portfolio">制作実績</a></li>
-        <li class="menu"><a href="./price">価格</a></li>
-        <li class="menu"><a href="./postMail">お問い合わせ</a></li>
+        <li class="menu"><a href="/portfolio">制作実績</a></li>
+        <li class="menu"><a href="/price">価格</a></li>
+        <li class="menu"><a href="/postMail">お問い合わせ</a></li>
       </ul>
       <ul class="displayFlex spMenus">
-        <li class="menu"><a href="./whisky">Whisky</a></li>
-        <li class="menu"><a href="./cocktail">Cocktail</a></li>
+        <li class="menu"><a href="/">ホーム</a></li>
+        <li class="menu"><a href="/#strongPoint">特徴</a></li>
+        <li class="menu"><a href="/#service">サービス</a></li>
+        <li class="menu"><a href="/portfolio">制作実績</a></li>
+        <li class="menu"><a href="/price">価格</a></li>
+        <li class="menu"><a href="/postMail">お問い合わせ</a></li>
       </ul>
     </div>
   </header>
 
   <div class="topWrapper">
-    <div class="wrap">
+    <div class="">
       <video id="topBackGroundVideo" playsinline autoplay loop muted>
         <source src="https://video.wixstatic.com/video/11062b_2f15a230bb5148e2b97a01cebba8a974/1080p/mp4/file.mp4" type="video/mp4">
       </video>
@@ -71,7 +75,7 @@
       <h1>トキメキ・感動・メッセージ</h1>
       <h1>ルーメンスタジオがお手伝いします</h1>
       <div>
-        <a class="toContactButton" href="./contact">お問い合わせ・お見積もり</a>
+        <a class="toContactButton" href="/postMail">お問い合わせ・お見積もり</a>
       </div>
     </div>
   </div>
@@ -118,7 +122,7 @@
       <h1 id="service">サービス</h1>
     </div>
     <div class="flexDirectiionColumn">
-      <div class="displayFlex marginAuto">
+      <div class="displayFlex">
         <div class="services">
           <div class="thirdSectionIcon">
             <svg preserveAspectRatio="xMidYMid meet" data-bbox="18 26 164 148" viewBox="18 26 164 148" xmlns="http://www.w3.org/2000/svg"
@@ -162,7 +166,7 @@
           </div>
         </div>
       </div>
-      <div class="displayFlex marginAuto">
+      <div class="displayFlex">
         <div class="services">
           <div class="thirdSectionIcon">
             <svg preserveAspectRatio="xMidYMid meet" data-bbox="18 26 164 148" viewBox="18 26 164 148" xmlns="http://www.w3.org/2000/svg"
@@ -216,8 +220,8 @@
     <div class="fourthSectionHeading themeColor">ルーメンの強み</div>
     <div class="fourthSectionBackgroundYellow">
       <iframe class="fourthSectionMovie" scrolling="no" frameborder="0" allow="autoplay; camera; microphone; geolocation; vr"
-        allowtransparency="true" allowfullscreen="" name="comp-jqxj1dxy" style="width:560px;height:318px;min-height:318px;min-width:560px;display:block;position:absolute;z-index:"
-        title="Wix Video" aria-label="Wix Video" id="comp-jqxj1dxyiframe" src="https://vod-server.wix.com/widget.html?cacheKiller=1565796202530&amp;compId=comp-jqxj1dxy&amp;deviceType=desktop&amp;externalId=82e83e2d-2099-447c-aaf3-84378864165a&amp;height=318&amp;instance=0tKfeA1paRtWTxZPUbWB-qo4lt30hoGvW1AcDLUq81M.eyJpbnN0YW5jZUlkIjoiNmIxYzQwOTItZDI0Mi00Y2Y3LThlZWYtOGVhM2YzNDM3NzRiIiwiYXBwRGVmSWQiOiIxNDQwOTU5NS1mMDc2LTQ3NTMtODMwMy05YTg2ZjlmNzE0NjkiLCJtZXRhU2l0ZUlkIjoiNGIxZThiNjctZjBmOC00ZDhiLTgxMDMtM2Y1NTc5NDFjZjI1Iiwic2lnbkRhdGUiOiIyMDE5LTA4LTE2VDA5OjM3OjI3Ljk5M1oiLCJ1aWQiOm51bGwsInBlcm1pc3Npb25zIjpudWxsLCJpcEFuZFBvcnQiOiIxMTguMjM4LjIxOS4xMDUvNjMxNTYiLCJ2ZW5kb3JQcm9kdWN0SWQiOiJ2aWRlb19taW5pbWFsIiwiZGVtb01vZGUiOmZhbHNlLCJvcmlnaW5JbnN0YW5jZUlkIjoiNTNhZmYyMGQtMzQzZC00MGRmLWE0YzgtMDE0M2FiYjUzMzYxIiwiYWlkIjoiMmU5MjQ3MjktMDU3My00ZDU0LWJlNTQtZjM1ZGYyNWIyYjUwIiwiYmlUb2tlbiI6IjIwMDJjYmY1LTIyYmEtMDE3Yy0wZmVjLWIxZjY4YTAyYjg2ZSIsInNpdGVPd25lcklkIjoiODJlODNlMmQtMjA5OS00NDdjLWFhZjMtODQzNzg4NjQxNjVhIn0&amp;locale=ja&amp;pageId=xvqu2&amp;siteRevision=240&amp;viewMode=site&amp;width=566">
+        allowtransparency="true" allowfullscreen="" name="comp-jqxj1dxy" style="width:530px;height:314px;min-height:314px;min-width:560px;display:block;position:absolute;z-index:"
+        title="fullAnimationMovie" aria-label="Wix Video" id="comp-jqxj1dxyiframe" src="https://www.youtube.com/embed/PmrD4hpdJGM">
       </iframe>
       <div class="fourthStrongPointWrap marginAuto">
         <div class="forthSectionStrongPoint themeColor">
@@ -243,8 +247,8 @@
         </div>
       </div>
       <iframe scrolling="no" frameborder="0" allow="autoplay; camera; microphone; geolocation; vr" allowtransparency="true"
-        allowfullscreen="" name="comp-jqxjbwtz" style="width:561px;height:316px;min-height:316px;min-width:561px;display:block;position:absolute;z-index:"
-        title="Wix Video" aria-label="Wix Video" id="comp-jqxjbwtziframe" class="fourthSectionMovie2" src="https://vod-server.wix.com/widget.html?cacheKiller=1565888344447&amp;compId=comp-jqxjbwtz&amp;deviceType=desktop&amp;externalId=82e83e2d-2099-447c-aaf3-84378864165a&amp;height=316&amp;instance=x3jq5JVoRZZ3h2dyyI6JCLXLukAh7EkGd6K3SqTzCUw.eyJpbnN0YW5jZUlkIjoiNmIxYzQwOTItZDI0Mi00Y2Y3LThlZWYtOGVhM2YzNDM3NzRiIiwiYXBwRGVmSWQiOiIxNDQwOTU5NS1mMDc2LTQ3NTMtODMwMy05YTg2ZjlmNzE0NjkiLCJtZXRhU2l0ZUlkIjoiNGIxZThiNjctZjBmOC00ZDhiLTgxMDMtM2Y1NTc5NDFjZjI1Iiwic2lnbkRhdGUiOiIyMDE5LTA4LTE2VDEyOjMwOjEzLjA4MVoiLCJ1aWQiOm51bGwsInBlcm1pc3Npb25zIjpudWxsLCJpcEFuZFBvcnQiOiIxMTguMjM4LjIxOS4xMDUvNTI2NTgiLCJ2ZW5kb3JQcm9kdWN0SWQiOiJ2aWRlb19taW5pbWFsIiwiZGVtb01vZGUiOmZhbHNlLCJvcmlnaW5JbnN0YW5jZUlkIjoiNTNhZmYyMGQtMzQzZC00MGRmLWE0YzgtMDE0M2FiYjUzMzYxIiwiYWlkIjoiMmU5MjQ3MjktMDU3My00ZDU0LWJlNTQtZjM1ZGYyNWIyYjUwIiwiYmlUb2tlbiI6IjIwMDJjYmY1LTIyYmEtMDE3Yy0wZmVjLWIxZjY4YTAyYjg2ZSIsInNpdGVPd25lcklkIjoiODJlODNlMmQtMjA5OS00NDdjLWFhZjMtODQzNzg4NjQxNjVhIn0&amp;locale=ja&amp;pageId=xvqu2&amp;siteRevision=240&amp;viewMode=site&amp;width=561">
+        allowfullscreen="" style="width:561px;height:316px;min-height:316px;min-width:561px;display:block;position:absolute;z-index:"
+        title="seminarReal" class="fourthSectionMovie2" src="https://player.vimeo.com/video/357701780">
       </iframe>
     </div>
   </div>
@@ -253,8 +257,8 @@
     <div class="flexSpaceAround">
       <div>
         <iframe scrolling="no" frameborder="0" allow="autoplay; camera; microphone; geolocation; vr" allowtransparency="true"
-          allowfullscreen="" name="comp-jqxkm39t" style="width:566px;height:318px;min-height:318px;min-width:566px;display:block;position:absolute;z-index:"
-          title="Wix Video" aria-label="Wix Video" id="comp-jqxkm39tiframe" class="fourthSectionMovie3" src="https://vod-server.wix.com/widget.html?cacheKiller=1565888344447&amp;compId=comp-jqxkm39t&amp;deviceType=desktop&amp;externalId=82e83e2d-2099-447c-aaf3-84378864165a&amp;height=318&amp;instance=kEep9MNzMMOmWXA7yhXVNj4VVPWNRywUKOyXpmJBpRw.eyJpbnN0YW5jZUlkIjoiNmIxYzQwOTItZDI0Mi00Y2Y3LThlZWYtOGVhM2YzNDM3NzRiIiwiYXBwRGVmSWQiOiIxNDQwOTU5NS1mMDc2LTQ3NTMtODMwMy05YTg2ZjlmNzE0NjkiLCJtZXRhU2l0ZUlkIjoiNGIxZThiNjctZjBmOC00ZDhiLTgxMDMtM2Y1NTc5NDFjZjI1Iiwic2lnbkRhdGUiOiIyMDE5LTA4LTE3VDA1OjMwOjQwLjU4NloiLCJ1aWQiOm51bGwsInBlcm1pc3Npb25zIjpudWxsLCJpcEFuZFBvcnQiOiIxMTguMjM4LjIxOS4xMDUvNTI2NTgiLCJ2ZW5kb3JQcm9kdWN0SWQiOiJ2aWRlb19taW5pbWFsIiwiZGVtb01vZGUiOmZhbHNlLCJvcmlnaW5JbnN0YW5jZUlkIjoiNTNhZmYyMGQtMzQzZC00MGRmLWE0YzgtMDE0M2FiYjUzMzYxIiwiYWlkIjoiMmU5MjQ3MjktMDU3My00ZDU0LWJlNTQtZjM1ZGYyNWIyYjUwIiwiYmlUb2tlbiI6IjIwMDJjYmY1LTIyYmEtMDE3Yy0wZmVjLWIxZjY4YTAyYjg2ZSIsInNpdGVPd25lcklkIjoiODJlODNlMmQtMjA5OS00NDdjLWFhZjMtODQzNzg4NjQxNjVhIn0&amp;locale=ja&amp;pageId=xvqu2&amp;siteRevision=240&amp;viewMode=site&amp;width=566">
+          allowfullscreen="" style="width:566px;height:318px;min-height:340px;min-width:500px;display:block;position:absolute;z-index:"
+          title="realAnimation" class="fourthSectionMovie3" src="https://www.youtube.com/embed/ij4FT3AGId8">
         </iframe>
       </div>
       <div class="fourthStrongPointWrap">
@@ -281,21 +285,19 @@
       お客様の予算内で最適の動画をご提案させて頂きます。
     </h3>
     <div>
-      <a class="toContactButton" href="./postMail">お問い合わせ・お見積もり</a>
+      <a class="toContactButtonTextChangeThemecolor" href="/postMail">お問い合わせ・お見積もり</a>
     </div>
   </div>
 
-
-  <footer class="themeColorBackGround">
-    <div class="textAlignCenter colorGray">
-      Copyright ©Lumen Studio powered by BASE, Inc.
+  <footer class="themeColorBackGround textAlignCenter">
+    <div class="textAlignCenter colorWhite">
+      Copyright ©️ 2019 Lumen Studio powered by BASE, Inc.
     </div>
-    <a href="./contact">
-      <div class="textAlignCenter colorGray">
+    <a href="/postMail" class="colorWhite">
+      <div class="textAlignCenter colorWhite">
         お問い合わせ
       </div>
     </a>
-    <div class="modalContact"><script>(function (t, a, y, o, r, i) { r = a.createElement(y), i = a.getElementsByTagName(y)[0]; r.type = 'text/javascript'; r.async = 1; r.src = '//tayori.com/form/7d658e92ade76222dd0961f5bbc3dbaefbc9e694/tag.js'; r.id = 'tayori-tag'; i.parentNode.insertBefore(r, i) })(window, document, 'script');</script></div>
   </footer>
 </body>
 

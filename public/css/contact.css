@@ -2,7 +2,7 @@
 @import url("portfolio.css");
 
 .contactWrapper {
-    padding: 200px 350px 0 350px;
+    padding: 200px 250px 0 250px;
 }
 
 .contactFormName {
@@ -54,6 +54,7 @@ input, textarea {
   transition: all .3s;
   color: #fff;
 }
+
 input:focus,
 textarea:focus {
   box-shadow: 0 0 7px #1abc9c;

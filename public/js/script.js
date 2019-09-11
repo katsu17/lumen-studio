@@ -5,7 +5,7 @@ var topBackGroundVideo = document.querySelectorAll('#topBackGroundVideo');
 topBackGroundVideo.autoplay  = true;
 topBackGroundVideo.loop  = true;
 
-<script type="text/javascript">
+
 $(function(){
 	$('a[href^=#]').click(function(){
 		var speed = 500;
@@ -16,4 +16,12 @@ $(function(){
 		return false;
 	})
 });
-</script>
+
+function togglemenu() {
+    var element = document.body.querySelector('.spMenus');
+    element.classList.toggle("opened");
+    var element = document.body.querySelector('.menuShadow');
+    element.classList.toggle("opened");
+    // var element = document.body.querySelector('.menuIcon');
+    // element.classList.toggle("displayNone");
+}
