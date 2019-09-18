@@ -18,16 +18,22 @@ li {
 
 #topBackGroundVideo {
     width: 100%;
-    position: absolute;
+    position: relative;
 }
 
 #strongPoint {
     padding-top: 100px;
-    transition: all 1s;
+    margin-top: -100px;
 }
 
 #service {
     padding-top: 100px;
+    margin-top: -100px;
+}
+
+.topWrapper {
+    margin-top: 90px;
+    position: relative;
 }
 
 .textDecorationNone {
@@ -48,10 +54,7 @@ li {
 
 .secondSectionWrapper {
     text-align: center;
-    margin-top: 650px;
-    margin-bottom: 200px; 
-    margin-right: 20%;
-    margin-left: 20%;
+    padding: 15% 5%;
 }
 
 .warp {
@@ -115,8 +118,13 @@ li {
 }
 
 .fourthStrongPointWrap {
-    width: 340px;
-    padding: 60px 0;
+    width: 380px;
+    padding: 20px;
+    text-align: center;
+}
+
+.fourthStrongPointRealAnimationWrap {
+    width: 100%;
 }
 
 .fourthSectionBackgroundYellow {
@@ -136,9 +144,9 @@ li {
 }
 
 .fourthSectionBackgroundThemeColor2 {
-    padding: 100px 0;
+    padding: 30px 0;
     background-color: rgba(8, 114, 158, 1);
-    margin: 50px 0;
+    text-align: center;
 }
 
 .forthSectionStrongPoint {
@@ -148,24 +156,8 @@ li {
 
 .fourthSectionStrongPointDescription {
     font-size: 20px;
+    padding: 30px;
 }
-
-.fourthSectionMovie {
-    top: 60px;
-    left: -450px;
-    z-index: 1;
-}
-
-.fourthSectionMovie2{
-    top: 60px;
-    right: -400px;
-}
-
-.fourthSectionMovie3 {
-    /* padding: 100px 0; */
-    left: 200px;
-}
-
 
 .topContactButton:hover {
     color:#000;
@@ -175,8 +167,8 @@ li {
 .topHeading {
     color: #fff;
     text-align: center;
-    position: relative;
-    top: 200px;
+    position: absolute;
+    top: 100px;
     font-weight: 100;
     height: 300px;
     display: flex;
@@ -205,17 +197,17 @@ li {
 .services {
     text-align: center;
     padding-bottom: 100px;
-    width: 700px;
+    width: 500px;
     padding: 50px;
 }
 
 .servicesHeding {
-    font-size: 32px;
+    font-size: 27px;
     padding: 20px 0;
 }
 
 .servicesDescription {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .flexDirectiionColumn {
@@ -234,7 +226,12 @@ li {
 }
 
 .toContactDiscription {
-    font-size: 20px;
+    font-size: 15px;
+    padding: 40px 30px 0 30px;
+}
+
+.toContactBttonWrap {
+    padding: 54px 0;
 }
 
 footer {
@@ -272,7 +269,8 @@ footer {
 }
 
 .spTopImage {
-    position: absolute;
+    position: relative;
+    width: 100%;
 }
 
 .headerImage {
@@ -325,8 +323,8 @@ footer {
 }
 
 .strongPoint {
-    height: 200px;
-    line-height: 200px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .strongPointWrap {
@@ -354,7 +352,7 @@ footer {
 .strongPointTitle {
     position: absolute;
     text-align: center;
-    height: 100px;
+    height: 70px;
     line-height: 100px;
     width: 200px;
     font-size: 25px;
@@ -370,11 +368,6 @@ footer {
 .flexSpaceEvenly {
     display: flex;
     justify-content: space-evenly;
-}
-
-.flexSpaceAround {
-    display: flex;
-    justify-content: space-around;
 }
 
 .fontSize25px {
@@ -440,6 +433,7 @@ header {
 
 .spMenus .menu a {
     padding-left: 20px;
+    color: #fff;
 }
 
 .menu:hover {
@@ -532,7 +526,7 @@ header {
 .spMenus {
     transform: translateX(101%);
     flex-direction: column;
-    background-color: #fff;
+    background-color: rgba(8, 114, 158, 1);
     width: 200px;
     z-index: 100;
     /* padding-left: 20px; */
@@ -625,7 +619,109 @@ header {
     display: none;
 }
 
+.pcFourthSectionMovie2 {
+    display: none;
+}
+
+.displayBlock {
+    display: block;
+}
+
+.pcFourthSectionMovie3 {
+    display: none;
+}
+
+.spFourthSectionMovie3 {
+    width: 340px;
+    height: 200px;
+
+}
+
 @media screen and (min-width:720px) {
+
+    .toContactDiscription {
+        font-size: 20px;
+    }
+    
+
+    .fourthSectionStrongPointDescription {
+        padding: 0;
+    }
+    
+
+    .fourthStrongPointRealAnimationWrap {
+        width: 359px;
+    }    
+
+    .fourthSectionBackgroundThemeColor2 {
+        padding: 100px 0 220px 0;
+        text-align: left;
+    }
+    
+
+    .spFourthSectionMovie3 {
+        display: none;
+    }
+    
+    .pcFlexSpaceAround {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .fourthStrongPointWrap {
+        width: 380px;
+        padding: 60px 0;
+        text-align: left;
+    }
+
+    .topHeading {
+        right: 30%;
+        left: 30%;
+    }
+
+    .pcDisplayFlexCenter {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pcDisplayFlex {
+        display: flex;
+    }
+
+    .pcFourthSectionMovie3 {
+        /* padding: 100px 0; */
+        left: 200px;
+        width: 520px;
+        height: 318px;
+        min-height: 320px;
+        min-width: 500px;
+        display:block;
+        position:absolute;
+    }
+
+    .pcFourthSectionMovie2 {
+        width:561px;
+        height:316px;
+        min-height:316px;
+        min-width:561px;
+        display:block;
+        position:absolute;
+        top: 60px;
+        right: -400px;
+    }        
+
+    .pcFourthSectionMovie {
+        top: 60px;
+        left: -450px;
+        z-index: 1;
+        width:530px;
+        height:314px;
+        min-height:314px;
+        min-width:560px;
+        display:block;
+        position:absolute;
+    }
+    
 
     .pcTopVideo {
         display: block;
@@ -685,10 +781,6 @@ header {
         margin-top: 30px;
     }
 
-    .topWrapper {
-
-    }
-
     .pcTopWrapper {
         margin-top: 64px;
         background-size: cover;
@@ -709,10 +801,35 @@ header {
         width: 600px;
         height: 300px;
     }
+
+    .pcTextAlignLeft {
+        text-align: left;
+    }
     
+    .pcSecondSectionWrapper {
+        padding: 5% 20%;
+    }
+
+    .spSeminarMovie {
+        display: none;
+    }
+
+    .spFullAnimationMovieSample {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 720px) {
+
+    .spTextAlignCenter {
+        text-align: center;
+    }
+
+    .spToPricePageButton {
+        width: 80%;
+        font-size: 20px;
+        margin: 30px 0;
+    }
     .spHeaderLogo {
         padding: 15px;
     }
@@ -721,4 +838,71 @@ header {
         width: 54px;
     }
     
+    .spFourthSectionBackgroundYellow {
+        width: auto;
+        right: auto;
+        height: auto;
+    }
+
+    .spFourthSectionBackgroundThemeColor {
+        width: auto;
+        right: auto;
+        height: auto;
+    }
+
+    .spStrongPointTitle {
+        position: static;
+        width: auto;
+    }
+
+    .spStrongPointDiscription {
+        width: auto;
+    }
+
+    .spStrongPoint {
+        display: block;
+        line-height: normal;
+    }
+
+    .strongPointUnderLine {
+        display: none;
+    }
+
+    .spStrongPointWrap {
+        width: auto;
+    }
+
+    .strongPointUnderLineForFiveWords {
+        display: none;
+    }
+
+    .spServices {
+        width: auto;
+        padding: 30px 10px;
+    }
+
+    .spFullAnimationMovieSample {
+        width: 340px;
+        height: 190px;
+    }
+
+    .player {
+        margin: 0;
+    }
+
+    .spSeminarMovie {
+        max-width: none;
+        height: 190px;
+        width: 340px;
+    }
+
+    .pcFourthSectionMovie {
+        display: none;
+    }
+
+    .spFourthSectionStrongPointDescription {
+        font-size: 18px;
+        padding: 20px 8px;
+    }
+
 }

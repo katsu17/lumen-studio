@@ -5,14 +5,19 @@ iframe {
 }
 
 .portFolioWrapper {
-    padding: 100px 230px;
+    padding: 150px 230px 100px 230px;
     text-align: center;
+    color: rgba(8, 114, 158, 1);
 }
 
 .section {
-    margin: 100px 0;
+    margin: 70px 0;
 }
 
 .videos {
     margin-top: 50px;
+}
+
+.videoTypesTitle {
+    font-size: 24px;
 }
