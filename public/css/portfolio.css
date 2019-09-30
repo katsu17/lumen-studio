@@ -1,13 +1,17 @@
 @import url("portfolio.css");
 
 iframe {
-    display: block;
+    display: inherit;
+}
+
+.spVideoWrap {
+    padding: 10px 0;
 }
 
 .portFolioWrapper {
-    padding: 150px 230px 100px 230px;
     text-align: center;
     color: rgba(8, 114, 158, 1);
+    padding: 100px 5%;
 }
 
 .section {
@@ -16,8 +20,46 @@ iframe {
 
 .videos {
     margin-top: 50px;
+    padding: 0 5%;
 }
 
 .videoTypesTitle {
     font-size: 24px;
+}
+
+.portForioVideos {
+    width: 100%;
+    height: 190px
+}
+
+.realVideoWrap {
+    padding-top: 70px;
+}
+
+@media screen and (min-width: 720px) {
+
+    iframe {
+        display: block;
+    }    
+
+    .videos {
+        padding: 0;
+    }
+    
+    .portFolioWrapper {
+        padding: 150px 230px 100px 230px;
+    }
+
+    .pcPortForioVideos {
+        width: 415px;
+        height: 232px;
+    }
+
+    .spVideoWrap {
+        padding: 0;
+    }
+
+    .realVideoWrap {
+        padding-top: 0;
+    }
 }

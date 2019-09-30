@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148326519-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148326519-1');
+</script>
+
 <meta charset="shift_jis">
 <meta http-equiv="content-style-type" content="text/css">
 <link rel="stylesheet" href="style.css" type="text/css">
 <link rel="stylesheet" href="../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../css/cursor.css" type="text/css">
 <link rel="icon" href="/image/Lumens-LOGO-draft.ico">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <title>送信完了</title>
@@ -13,12 +24,12 @@
 
 </head>
 <body>
-	
+	<div id="stalker"></div>
   <header class="themeColorBackGround">
     <div class="menuShadow" onclick="togglemenu()"></div>
     <div class="flexSpaceBetween">
-      <a class="headerLogo" href="/">
-        <img src="/image/Lumens-LOGO-draft.jpg" alt="">
+      <a class="headerLogo spHeaderLogo" href="/">
+        <img src="/image/Lumens-LOGO-draft.jpg" alt="" class="spLogoImage">
       </a>
       <!-- <img class="headerImage" src="/public/image/wantsukaTop2.jpg" alt=""> -->
       <div onclick="togglemenu()" class="flexAlignItemsCenter"><img class="menuIcon" src="/image/menuIcon.svg" alt=""></div>
@@ -66,6 +77,37 @@
       </div>
     </a>
   </footer>
+	
+	  <script>
+    const stalker = document.querySelector('#stalker');
+    let hovFlag = false;
+
+    document.addEventListener('mousemove', function (e) {
+      if(!hovFlag) {
+        stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+      } 
+    });
+
+    const linkElem = document.querySelectorAll('a');
+    for (let i = 0; i < linkElem.length; i++) {
+      linkElem[i].addEventListener('mouseover', function (e) {
+        hovFlag = true;
+        stalker.classList.add('linkHover');
+
+        let rect = e.target.getBoundingClientRect();
+        let posX = rect.left + (rect.width / 2);
+        let posY = rect.top + (rect.height / 2);
+
+        stalker.style.transform = 'translate(' + posX + 'px,' + posY + 'px)';
+      });
+
+      linkElem[i].addEventListener('mouseout', function (e) {
+        hovFlag = false;
+        stalker.classList.remove('linkHover');
+      })
+    }
+
+    </script>
 	
 </body>
 </html>

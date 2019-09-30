@@ -2,6 +2,16 @@
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148326519-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-148326519-1');
+  </script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lumen Studio</title>
@@ -18,19 +28,19 @@
 
   <link rel="icon" href="/image/Lumens-LOGO-draft.ico">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/cursor.css">
   <link rel="stylesheet" href="/css/price.css">
   <script src="./js/script.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
-
-
 </head>
 
 <body>
+  <div id="stalker"></div>
   <header class="themeColorBackGround">
     <div class="menuShadow" onclick="togglemenu()"></div>
     <div class="flexSpaceBetween">
-      <a class="headerLogo" href="/">
-        <img src="/image/Lumens-LOGO-draft.jpg" alt="">
+      <a class="headerLogo spHeaderLogo" href="/">
+        <img src="/image/Lumens-LOGO-draft.jpg" alt="" class="spLogoImage">
       </a>
       <!-- <img class="headerImage" src="/public/image/wantsukaTop2.jpg" alt=""> -->
       <div onclick="togglemenu()" class="flexAlignItemsCenter"><img class="menuIcon" src="/image/menuIcon.svg" alt=""></div>
@@ -68,11 +78,11 @@
       <div>
         <h1>セミナー・講演レコーディング</h1>
       </div>
-      <div class="flexSpaceAround priceDitail">
+      <div class="pcFlexSpaceAround priceDitail">
         <div>
-          <iframe class="Video1423133661--playerContainer" data-player-name="YouTube" frameborder="0" allowfullscreen="1"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player"
-            width="430px" height="240px" src="https://www.youtube.com/embed/fjgK_1UA2Dg" id="widget2">
+          <iframe class="priceVideos" data-player-name="YouTube" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            title="YouTube video player" width="430px" height="240px" src="https://www.youtube.com/embed/fjgK_1UA2Dg"
+            id="widget2">
           </iframe>
         </div>
         <div class="priceDiscription">
@@ -87,11 +97,11 @@
       <div>
         <h1>インタビュー・企業動画製作</h1>
       </div>
-      <div class="flexSpaceAround priceDitail">
+      <div class="pcFlexSpaceAround priceDitail">
         <div>
-          <iframe class="Video1423133661--playerContainer" data-player-name="YouTube" frameborder="0" allowfullscreen="1"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player"
-            width="430px" height="240px" src="https://www.youtube.com/embed/mLQ_mfeUe_I" id="widget12">
+          <iframe class="priceVideos" data-player-name="YouTube" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            title="YouTube video player" width="430px" height="240px" src="https://www.youtube.com/embed/mLQ_mfeUe_I"
+            id="widget12">
           </iframe>
         </div>
         <div class="priceDiscription">
@@ -106,7 +116,7 @@
       <!-- <div>
         <h1>SNS</h1>
       </div>
-      <div class="flexSpaceAround priceDitail">
+      <div class="pcFlexSpaceAround priceDitail">
         <div>
           <iframe class="Video1423133661--playerContainer" data-player-name="YouTube" frameborder="0" allowfullscreen="1"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player"
@@ -127,11 +137,10 @@
       <div>
         <h1>実写動画</h1>
       </div>
-      <div class="flexSpaceAround priceDitail">
+      <div class="pcFlexSpaceAround priceDitail">
         <div>
-          <iframe class="Video2270652342--playerContainer" data-player-name="YouTube" frameborder="0" allowfullscreen="1"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player"
-            width="410px" height="240px" src="https://www.youtube.com/embed/qtGpyGgdgr4?autoplay=0&amp;mute=0&amp;controls=1&amp;loop=0&amp;origin=https%3A%2F%2Fwww.lumen-studio.jp&amp;playsinline=1&amp;enablejsapi=1&amp;widgetid=7"
+          <iframe class="priceVideos" data-player-name="YouTube" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            title="YouTube video player" width="410px" height="240px" src="https://www.youtube.com/embed/qtGpyGgdgr4?autoplay=0&amp;mute=0&amp;controls=1&amp;loop=0&amp;origin=https%3A%2F%2Fwww.lumen-studio.jp&amp;playsinline=1&amp;enablejsapi=1&amp;widgetid=7"
             id="widget8">
           </iframe>
         </div>
@@ -148,9 +157,9 @@
       <div>
         <h1>フルアニメーション動画</h1>
       </div>
-      <div class="flexSpaceAround priceDitail">
+      <div class="pcFlexSpaceAround priceDitail">
         <div>
-          <iframe src="https://player.vimeo.com/video/262233782?title=0&amp;app_id=122963" width="400px" height="240px"
+          <iframe src="https://player.vimeo.com/video/262233782?title=0&amp;app_id=122963" class="priceVideos"
             frameborder="0" title="Cryptobloom Media" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true">
           </iframe>
         </div>
@@ -163,12 +172,12 @@
         </div>
       </div>
 
-      <div>
+      <!-- <div>
         <h1>HQアニメーション動画</h1>
       </div>
-      <div class="flexSpaceAround priceDitail">
-        <div style="background-color: rgb(250, 226, 15); width:400px; height: 240px; ">
-          <p style="font-size:47px; text-align: center; color: #fff; transform: translateY(100%);">対面後ご提示可能</p>
+      <div class="pcFlexSpaceAround priceDitail">
+        <div class="priceVideos" style="background-color: rgb(250, 226, 15);">
+          <p class="hqAnimationVideoPoster">対面後ご提示可能</p>
         </div>
         <div class="priceDiscription">
           <h2>¥ 600,000〜応相談</h2>
@@ -177,7 +186,7 @@
             アニメーション動画は、サービス詳細やアプリケーションの機能など、抽象的なものを分かりやすく伝えることが出来ます。国内外のクリエイターを抱えているルーメンでは、クオリティの高いオリジナルフルアニメーション動画を作れる強みを持っています。海外にアプローチする際のデザイン性の提案力も我々の強みです。
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="buttonWrap">
         <button class="toContactButton" onclick="location.href='/postMail'">お問い合わせ</button>
@@ -198,6 +207,36 @@
       </div>
     </a>
   </footer>
+  <script>
+    const stalker = document.querySelector('#stalker');
+    let hovFlag = false;
+
+    document.addEventListener('mousemove', function (e) {
+      if (!hovFlag) {
+        stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+      }
+    });
+
+    const linkElem = document.querySelectorAll('a');
+    for (let i = 0; i < linkElem.length; i++) {
+      linkElem[i].addEventListener('mouseover', function (e) {
+        hovFlag = true;
+        stalker.classList.add('linkHover');
+
+        let rect = e.target.getBoundingClientRect();
+        let posX = rect.left + (rect.width / 2);
+        let posY = rect.top + (rect.height / 2);
+
+        stalker.style.transform = 'translate(' + posX + 'px,' + posY + 'px)';
+      });
+
+      linkElem[i].addEventListener('mouseout', function (e) {
+        hovFlag = false;
+        stalker.classList.remove('linkHover');
+      })
+    }
+
+  </script>
 </body>
 
 </html>

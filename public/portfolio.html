@@ -2,22 +2,33 @@
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148326519-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-148326519-1');
+  </script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lumen Studio</title>
 
   <!-- update the version number as needed -->
-  <script defer src="/__/firebase/6.3.4/firebase-app.js"></script>
+  <!-- <script defer src="/__/firebase/6.3.4/firebase-app.js"></script> -->
   <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/6.3.4/firebase-auth.js"></script>
+  <!-- <script defer src="/__/firebase/6.3.4/firebase-auth.js"></script>
   <script defer src="/__/firebase/6.3.4/firebase-database.js"></script>
   <script defer src="/__/firebase/6.3.4/firebase-messaging.js"></script>
-  <script defer src="/__/firebase/6.3.4/firebase-storage.js"></script>
+  <script defer src="/__/firebase/6.3.4/firebase-storage.js"></script> -->
   <!-- initialize the SDK after all desired features are loaded -->
-  <script defer src="/__/firebase/init.js"></script>
+  <!-- <script defer src="/__/firebase/init.js"></script> -->
 
   <link rel="icon" href="/image/Lumens-LOGO-draft.ico">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/cursor.css">
   <link rel="stylesheet" href="/css/portfolio.css">
   <script src="./js/script.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
@@ -26,11 +37,12 @@
 </head>
 
 <body>
+  <div id="stalker"></div>
   <header class="themeColorBackGround">
     <div class="menuShadow" onclick="togglemenu()"></div>
     <div class="flexSpaceBetween">
-      <a class="headerLogo" href="/">
-        <img src="/image/Lumens-LOGO-draft.jpg" alt="">
+      <a class="headerLogo spHeaderLogo" href="/">
+        <img src="/image/Lumens-LOGO-draft.jpg" alt="" class="spLogoImage">
       </a>
       <!-- <img class="headerImage" src="/public/image/wantsukaTop2.jpg" alt=""> -->
       <div onclick="togglemenu()" class="flexAlignItemsCenter"><img class="menuIcon" src="/image/menuIcon.svg" alt=""></div>
@@ -57,57 +69,57 @@
     <h1>製作実績</h1>
     <div class="section">
       <p class="videoTypesTitle"> フルアニメーション動画</p>
-      <div class="flexSpaceAround videos">
-        <div>
+      <div class="pcFlexSpaceAround videos">
+        <div class="spVideoWrap">
 
           <!-- <iframe src="https://player.vimeo.com/video/262233782" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
             <p><a href="https://vimeo.com/262233782">Cryptobloom Media</a> from <a href="https://vimeo.com/user45201886">seritha1</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
 
-          <iframe src="https://player.vimeo.com/video/262233782?title=0&amp;app_id=122963" width="415" height="232"
-            frameborder="0" title="Cryptobloom Media" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true">
+          <iframe src="https://player.vimeo.com/video/262233782?title=0&amp;app_id=122963" class="portForioVideos pcPortForioVideos"
+            frameborder="0" title="Cryptobloom Media" allow="autoplay; fullscreen" allowfullscreen="1" data-ready="true">
           </iframe>
         </div>
-        <div>
-          <iframe class="Video1423133661--playerContainer" width="415" height="232" data-player-name="YouTube"
-            frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/PmrD4hpdJGM" id="widget10">
+        <div class="spVideoWrap">
+          <iframe class="portForioVideos pcPortForioVideos" data-player-name="YouTube" frameborder="0" allowfullscreen=""
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player"
+            width="100%" height="100%" src="https://www.youtube.com/embed/PmrD4hpdJGM" id="widget10">
           </iframe>
         </div>
       </div>
-      <div class="flexSpaceAround videos">
-        <div>
-          <iframe class="Video1423133661--playerContainer" width="415" height="230" data-player-name="YouTube"
-            frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            title="YouTube video player" src="https://www.youtube.com/embed/dz39L5SI75k" id="widget12">
+      <div class="pcFlexSpaceAround videos">
+        <div class="spVideoWrap">
+          <iframe data-player-name="YouTube" frameborder="0" allowfullscreen="1" class="portForioVideos pcPortForioVideos"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player"
+            src="https://www.youtube.com/embed/dz39L5SI75k" id="widget12">
           </iframe>
         </div>
-        <div>
-          <iframe src="https://player.vimeo.com/video/262849812?title=0&amp;app_id=122963" width="415" height="235"
-            frameborder="0" title="Herbst Software" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true">
+        <div class="spVideoWrap">
+          <iframe src="https://player.vimeo.com/video/262849812?title=0&amp;app_id=122963" frameborder="0" title="Herbst Software"
+            allow="autoplay; fullscreen" allowfullscreen="1" class="portForioVideos pcPortForioVideos" data-ready="true">
           </iframe>
         </div>
       </div>
     </div>
 
-    <div class="section flexSpaceAround">
+    <div class="section pcFlexSpaceAround">
       <div class="">
         <p class="videoTypesTitle">実写＋アニメーション</p>
         <div class="videos">
-          <div>
-            <iframe src="https://www.youtube.com/embed/ij4FT3AGId8" width="415" height="235" frameborder="0" title="realAnimation"
-              allow="autoplay; fullscreen" allowfullscreen="" data-ready="true">
+          <div class="spVideoWrap">
+            <iframe src="https://www.youtube.com/embed/ij4FT3AGId8" frameborder="0" title="realAnimation" allow="autoplay; fullscreen"
+              allowfullscreen="1" class="portForioVideos pcPortForioVideos" data-ready="true">
             </iframe>
           </div>
         </div>
       </div>
-      <div>
+      <div class="realVideoWrap">
         <p class="videoTypesTitle">実写動画</p>
         <div class="videos">
-          <div>
-            <video playsinline controls loop muted width="415" height="235">
+          <div class="spVideoWrap">
+            <video playsinline controls loop muted allowfullscreen="1" class="portForioVideos pcPortForioVideos">
               <source src="movie/barJimmyPV[1080P].MP4" type="video/mp4">
             </video>
-            <!-- <iframe src="https://player.vimeo.com/video/262233782?title=0&amp;app_id=122963" width="415" height="235"
+            <!-- <iframe src="https://player.vimeo.com/video/262233782?title=0&amp;app_id=122963"
               frameborder="0" title="Cryptobloom Media" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true">
             </iframe> -->
           </div>
@@ -117,19 +129,18 @@
 
     <div class="section">
       <p class="videoTypesTitle">インタビュー動画</p>
-      <div class="videos flexSpaceAround">
-        <div>
+      <div class="videos pcFlexSpaceAround">
+        <div class="spVideoWrap">
           <!-- <iframe src="https://player.vimeo.com/video/262849812" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
             <p><a href="https://vimeo.com/262849812">Herbst Software</a> from <a href="https://vimeo.com/user45201886">seritha1</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
 
-          <iframe src="https://player.vimeo.com/video/262849812?title=0&amp;app_id=122963" width="415" height="235"
-            frameborder="0" title="Cryptobloom Media" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true">
+          <iframe src="https://player.vimeo.com/video/262849812?title=0&amp;app_id=122963" frameborder="0" title="Cryptobloom Media"
+            allow="autoplay; fullscreen" allowfullscreen="1" class="portForioVideos pcPortForioVideos" data-ready="true">
           </iframe>
         </div>
-        <div>
-          <iframe class="Video1423133661--playerContainer" width="415" height="232" data-player-name="YouTube"
-            frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            title="Interview2" src="https://www.youtube.com/embed/mLQ_mfeUe_I ">
+        <div class="spVideoWrap">
+          <iframe class="portForioVideos pcPortForioVideos" data-player-name="YouTube" frameborder="0" allowfullscreen=""
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Interview2" src="https://www.youtube.com/embed/mLQ_mfeUe_I ">
           </iframe>
         </div>
       </div>
@@ -137,9 +148,9 @@
 
     <div class="section">
       <p class="videoTypesTitle">セミナー公演収録＆編集</p>
-      <div class="flexCenter videos">
-        <iframe title="vimeo-player" src="https://player.vimeo.com/video/357701780" width="415" height="235"
-          frameborder="0" allowfullscreen></iframe>
+      <div class="flexCenter videos spVideoWrap">
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/357701780" frameborder="0" allowfullscreen="1"
+          class="portForioVideos pcPortForioVideos"></iframe>
       </div>
     </div>
 
@@ -158,6 +169,35 @@
       </div>
     </a>
   </footer>
+  <script>
+    const stalker = document.querySelector('#stalker');
+    let hovFlag = false;
+
+    document.addEventListener('mousemove', function (e) {
+      if (!hovFlag) {
+        stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+      }
+    });
+
+    const linkElem = document.querySelectorAll('a');
+    for (let i = 0; i < linkElem.length; i++) {
+      linkElem[i].addEventListener('mouseover', function (e) {
+        hovFlag = true;
+        stalker.classList.add('linkHover');
+
+        let rect = e.target.getBoundingClientRect();
+        let posX = rect.left + (rect.width / 2);
+        let posY = rect.top + (rect.height / 2);
+
+        stalker.style.transform = 'translate(' + posX + 'px,' + posY + 'px)';
+      });
+
+      linkElem[i].addEventListener('mouseout', function (e) {
+        hovFlag = false;
+        stalker.classList.remove('linkHover');
+      })
+    }
+  </script>
 </body>
 
 </html>

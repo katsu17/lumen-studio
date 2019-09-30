@@ -2,33 +2,31 @@
 <html>
 
 <head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148326519-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-148326519-1');
+  </script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lumen Studio</title>
 
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <!-- update the version number as needed -->
   <!-- <script defer src="/__/firebase/6.3.4/firebase-app.js"></script>
   <script defer src="/__/firebase/6.3.4/firebase-auth.js"></script>
   <script defer src="/__/firebase/6.3.4/firebase-database.js"></script>
   <script defer src="/__/firebase/6.3.4/firebase-messaging.js"></script>
   <script defer src="/__/firebase/6.3.4/firebase-storage.js"></script> -->
-  <script type="text/javascript">
-    $(function () {
-      $('a[href^=#]').click(function () {
-        var speed = 1000;
-        var href = $(this).attr("href");
-        var target = $(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top;
-        $("html, body").animate({ scrollTop: position }, speed, "swing");
-        return false;
-      })
-    });
-  </script>
   <!-- initialize the SDK after all desired features are loaded -->
   <!-- <script defer src="/__/firebase/init.js"></script> -->
 
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/cursor.css">
   <link rel="icon" href="/image/Lumens-LOGO-draft.ico">
   <script src="/js/script.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
@@ -37,6 +35,7 @@
 </head>
 
 <body>
+  <div id="stalker"></div>
   <header class="themeColorBackGround">
     <div class="menuShadow" onclick="togglemenu()"></div>
     <div class="flexSpaceBetween">
@@ -261,6 +260,35 @@
       </div>
     </a>
   </footer>
-</body>
+  <script>
+    const stalker = document.querySelector('#stalker');
+    let hovFlag = false;
 
+    document.addEventListener('mousemove', function (e) {
+      if(!hovFlag) {
+        stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+      } 
+    });
+
+    const linkElem = document.querySelectorAll('a');
+    for (let i = 0; i < linkElem.length; i++) {
+      linkElem[i].addEventListener('mouseover', function (e) {
+        hovFlag = true;
+        stalker.classList.add('linkHover');
+
+        let rect = e.target.getBoundingClientRect();
+        let posX = rect.left + (rect.width / 2);
+        let posY = rect.top + (rect.height / 2);
+
+        stalker.style.transform = 'translate(' + posX + 'px,' + posY + 'px)';
+      });
+
+      linkElem[i].addEventListener('mouseout', function (e) {
+        hovFlag = false;
+        stalker.classList.remove('linkHover');
+      })
+    }
+
+    </script>
+</body>
 </html>
