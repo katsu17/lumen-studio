@@ -38,7 +38,7 @@
 
 <body>
   <div id="stalker"></div>
-  <header class="themeColorBackGround">
+  <header class="headerBackgroundColor">
     <div class="menuShadow" onclick="togglemenu()"></div>
     <div class="flexSpaceBetween">
       <a class="headerLogo spHeaderLogo" href="/">
@@ -146,13 +146,29 @@
       </div>
     </div>
 
-    <div class="section">
-      <p class="videoTypesTitle">セミナー公演収録＆編集</p>
-      <div class="flexCenter videos spVideoWrap">
-        <iframe title="vimeo-player" src="https://player.vimeo.com/video/357701780" frameborder="0" allowfullscreen="1"
-          class="portForioVideos pcPortForioVideos"></iframe>
+    <div class="section pcFlexSpaceAround">
+      <div class="">
+        <p class="videoTypesTitle">SNS動画</p>
+        <div class="videos">
+          <div class="spVideoWrap">
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/363238929" frameborder="0" allowfullscreen
+              class="portForioVideos pcPortForioVideos"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="realVideoWrap">
+        <p class="videoTypesTitle">セミナー公演収録＆編集</p>
+        <div class="videos">
+          <div class="spVideoWrap">
+            <div class="flexCenter videos spVideoWrap">
+              <iframe title="vimeo-player" src="https://player.vimeo.com/video/357701780" frameborder="0"
+                allowfullscreen="1" class="portForioVideos pcPortForioVideos"></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
 
     <div>
       <a class="toContactButtonTextChangeThemecolor" href="/postMail">お問い合わせ・お見積もり</a>
@@ -164,39 +180,28 @@
       Copyright ©️ 2019 Lumen Studio powered by BASE, Inc.
     </div>
     <a href="/postMail" class="colorWhite">
-      <div class="textAlignCenter colorWhite">
+      <div class="textAlignCenter colorWhite displayInlineblock">
         お問い合わせ
       </div>
     </a>
   </footer>
   <script>
     const stalker = document.querySelector('#stalker');
-    let hovFlag = false;
 
     document.addEventListener('mousemove', function (e) {
-      if (!hovFlag) {
-        stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
-      }
+      stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
     });
 
     const linkElem = document.querySelectorAll('a');
     for (let i = 0; i < linkElem.length; i++) {
       linkElem[i].addEventListener('mouseover', function (e) {
-        hovFlag = true;
         stalker.classList.add('linkHover');
-
-        let rect = e.target.getBoundingClientRect();
-        let posX = rect.left + (rect.width / 2);
-        let posY = rect.top + (rect.height / 2);
-
-        stalker.style.transform = 'translate(' + posX + 'px,' + posY + 'px)';
       });
-
       linkElem[i].addEventListener('mouseout', function (e) {
         hovFlag = false;
         stalker.classList.remove('linkHover');
-      })
-    }
+      });
+    };
   </script>
 </body>
 

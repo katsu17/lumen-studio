@@ -25,7 +25,7 @@
 </head>
 <body>
 <div id="stalker"></div>
-<header class="themeColorBackGround">
+<header class="headerBackgroundColor">
     <div class="menuShadow" onclick="togglemenu()"></div>
     <div class="flexSpaceBetween">
       <a class="headerLogo spHeaderLogo" href="/">
@@ -74,42 +74,30 @@
       Copyright &copy; 2019 Lumen Studio powered by BASE, Inc.
     </div>
     <a href="/postMail" class="colorWhite">
-      <div class="textAlignCenter colorWhite">
+      <div class="textAlignCenter colorWhite displayInlineblock">
         Ç®ñ‚Ç¢çáÇÌÇπ
       </div>
     </a>
   </footer>
   
-    <script>
+<script>
     const stalker = document.querySelector('#stalker');
-    let hovFlag = false;
 
     document.addEventListener('mousemove', function (e) {
-      if(!hovFlag) {
-        stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
-      } 
+      stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
     });
 
     const linkElem = document.querySelectorAll('a');
     for (let i = 0; i < linkElem.length; i++) {
       linkElem[i].addEventListener('mouseover', function (e) {
-        hovFlag = true;
         stalker.classList.add('linkHover');
-
-        let rect = e.target.getBoundingClientRect();
-        let posX = rect.left + (rect.width / 2);
-        let posY = rect.top + (rect.height / 2);
-
-        stalker.style.transform = 'translate(' + posX + 'px,' + posY + 'px)';
       });
-
       linkElem[i].addEventListener('mouseout', function (e) {
         hovFlag = false;
         stalker.classList.remove('linkHover');
-      })
-    }
-
-    </script>
+      });
+    };
+  </script>
   
 </body>
 </html>

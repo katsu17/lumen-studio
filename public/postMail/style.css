@@ -117,6 +117,10 @@ textarea:focus {
 	display: inline-block;
 }
 
+#displayInlineBlock {
+	display: inline-block;
+}
+
 /*postMail original*/
 
 body {

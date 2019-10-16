@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    font-family: Arbutus Slab, Noto Serif, roboto;
+    font-family: roboto, Arbutus Slab, Noto Serif;
 }
 
 h1, h2, h3, h4, h5, p, ul, li {
@@ -16,8 +16,21 @@ li {
     list-style: none;
 }
 
+iframe body {
+    cursor: none;
+}
+
+input, textarea {
+    cursor: none;
+}
+
+
+
 #topBackGroundVideo {
     width: 100%;
+    /* height: calc(100vh - 90px); */
+    object-fit: cover;
+    overflow: hidden;
     position: relative;
 }
 
@@ -31,9 +44,21 @@ li {
     margin-top: -100px;
 }
 
+.displayInlineblock {
+    display: inline-block;
+}
+
+.headerBackgroundColor {
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
 .topWrapper {
-    margin-top: 90px;
+    /* margin-top: 90px; */
     position: relative;
+}
+
+.topContactButtonWrap {
+    margin-top: 30px;
 }
 
 .textDecorationNone {
@@ -62,11 +87,10 @@ li {
 }
 
 .toContactButton {
-    cursor: none;
     padding: 10px 20px;
     background-color: rgba(232, 208, 0, 1);
     border: solid rgba(250, 226, 15, 1) 1px;
-    cursor: pointer;
+    cursor: none;
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -79,7 +103,7 @@ li {
     padding: 10px 20px;
     background-color: rgba(232, 208, 0, 1);
     border: solid rgba(250, 226, 15, 1) 1px;
-    cursor: pointer;
+    cursor: none;
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -102,7 +126,7 @@ li {
     text-align: center;
     padding: 10px 20px;
     border: solid rgba(250, 226, 15, 1) 1px;
-    cursor: pointer;
+    cursor: none;
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -166,15 +190,14 @@ li {
 }
 
 .topHeading {
+    font-weight: 20px;
+    right: 5%;
     color: #fff;
-    text-align: center;
+    text-align: right;
     position: absolute;
-    top: 100px;
+    top: 63%;
     font-weight: 100;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    /* height: 300px; */
 }
 
 .map {
@@ -401,9 +424,9 @@ header {
     height: 90px;
 }
 
-.headerLogo:hover {
+/* .headerLogo:hover {
     background-color: rgba(129, 129, 129, 0.5);
-}
+} */
 
 
 
@@ -437,9 +460,9 @@ header {
     color: #fff;
 }
 
-.menu:hover {
+/* .menu:hover {
     background-color: rgba(129, 129, 129, 0.5);
-}
+} */
 
 .colorWhite {
     color: #fff;
@@ -451,7 +474,7 @@ header {
 }
 
 .middleSection a {
-    cursor: pointer;
+    cursor: none;
 }
 
 .middleSection h1 a {
@@ -676,8 +699,10 @@ header {
     }
 
     .topHeading {
-        right: 30%;
-        left: 30%;
+        /* right: 30%; */
+        left: 5%;
+        font-size: 23px;
+        text-align: left;
     }
 
     .pcDisplayFlexCenter {
