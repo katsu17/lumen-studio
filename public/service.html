@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148326519-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148326519-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lumen Studio</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/6.3.4/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/6.3.4/firebase-auth.js"></script>
+    <script defer src="/__/firebase/6.3.4/firebase-database.js"></script>
+    <script defer src="/__/firebase/6.3.4/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/6.3.4/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <link rel="icon" href="/image/Lumens-LOGO-draft.ico">
+    <link rel="stylesheet" href="/css/service.css">
+    <!-- <link rel="stylesheet" href="/css/cursor.css"> -->
+    <script src="./js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="stalker"></div>
+    <header class="headerBackgroundColor">
+        <div class="menuShadow" onclick="togglemenu()"></div>
+        <div class="flexSpaceBetween">
+            <a class="headerLogo spHeaderLogo" href="/">
+                <img src="/image/Lumens-LOGO-draft.jpg" alt="lumenLogo" class="spLogoImage">
+            </a>
+            <!-- <img class="headerImage" src="/public/image/wantsukaTop2.jpg" alt=""> -->
+            <div onclick="togglemenu()" class="flexAlignItemsCenter"><img class="menuIcon" src="/image/menuIcon.svg"
+                    alt=""></div>
+            <ul class="flexCenter textAlignCenter pcMenus">
+                <li class="menu"><a href="/">Home<br>ホーム</a></li>
+                <li class="menu"><a href="/#aboutus">About Us<br>ルーメンスタジオ</a></li>
+                <li class="menu"><a href="/service">Service<br>サービス</a></li>
+                <li class="menu"><a href="/portfolio">Our Works<br>制作実績</a></li>
+                <li class="menu"><a href="/price">Price<br>価格</a></li>
+                <li class="menu"><a href="/postMail">Contact Us<br>お問い合わせ</a></li>
+            </ul>
+            <ul class="displayFlex spMenus">
+                <li class="menu"><a href="/">ホーム</a></li>
+                <li class="menu"><a href="/#strongPoint">特徴</a></li>
+                <li class="menu"><a href="/service">サービス</a></li>
+                <li class="menu"><a href="/portfolio">制作実績</a></li>
+                <li class="menu"><a href="/price">価格</a></li>
+                <li class="menu"><a href="/postMail">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <div class="thirdSectionWrapper backgroundGray">
+
+        <div class="maxWidth850px marginAuto">
+            <div id="aboutus" class="paddingTop90px fontSize30px paddingBottom60px">サービス</div>
+            <div class="fontSize18px paddingLeft50px">
+                世界中を飛び回って撮影をしてきたメンバーが立ち上げた、新しい動画マーケティング部門：ルーメンスタジオでは、企業の様々なご要望に合わせて幅広く動画制作サービスをご提供しております。編集のみや、企画から支援するパターンなど、様々。東京のみならず、世界中からご依頼を受け、世界に発信出来るコンテンツを制作致します！<br>
+                <br>
+                <br>
+                <span class="colorYellow fontWeightBold">動画プラン</span><br>
+                イベントなどの撮影のみのプラン、頂いた素材を元に編集のみのプラン、企画から制作までのトータルプラン、ご予算やご希望に合わせたカスタマイズできるプランなど。<br>
+                <br>
+                <span class="colorYellow fontWeightBold">ジャンル</span><br>
+                リクルート向け動画、会社案内、店頭での商品説明動画、アプリやサービス紹介、セミナー、教育研修、展示会、イベント、デジタルサイネージまで業種業界問わず幅広いジャンル・クリエイティブを映像制作しています。<br>
+                <br>
+                <span class="colorYellow fontWeightBold">内容</span><br>
+                企画構成からディレクション、絵コンテ、オリジナルイラスト・オリジナルアニメーション、モーショングラフィック、撮影、動画編集、BGM、ナレーション収録、字幕翻訳、データ納品までワンストップでご対応しています。<br>
+            </div>
+        </div>
+
+        <div class="flexDirectiionColumn paddingTopBottom30px">
+            <div class="pcDisplayFlexCenter">
+                <div class="services spServices">
+                    <a href="/animationVideo">
+                        <div class="borderWhite padding20px displayInlineblock">
+                            <img class="thirdSectionIcon" src="/image/animationMovieIcon.svg" alt="animationMovieIcon">
+                        </div>
+                    </a>
+                    <div>
+                        <div class="servicesHeding">アニメーション動画製作</div>
+                    </div>
+                    <div>
+                        <p class="fontSize16px">クオリティの高いアニメーション動画でサービス紹介やIT業界などの抽象的なものを分かりやすく伝えます</p>
+                    </div>
+                </div>
+                <div class="services spServices">
+                    <a href="/liveActionVideo">
+                        <div class="borderWhite padding20px displayInlineblock">
+                            <img class="thirdSectionIcon" src="/image/realMovieIcon.svg" alt="realMovieIcon">
+                        </div>
+                    </a>
+                    <!-- <img class="thirdSectionIcon" src="/image/realMovieIcon.svg" alt="realMovieIcon"> -->
+                    <div>
+                        <div class="servicesHeding">実写動画製作</div>
+                    </div>
+                    <div>
+                        <p class="fontSize16px">実写映像や説明文におしゃれなエフェクトを加えた、商品や雰囲気を直感的に伝える動画</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pcDisplayFlexCenter">
+                <div class="services spServices">
+                    <a href="/interviewVideo">
+                        <div class="borderWhite padding20px displayInlineblock">
+                            <img class="thirdSectionIcon" src="/image/interviewMovieIcon.svg" alt="interviewMovieIcon">
+                        </div>
+                    </a>
+                    <!-- <img class="thirdSectionIcon" src="/image/interviewMovieIcon.svg" alt="interviewMovieIcon"> -->
+                    <div>
+                        <div class="servicesHeding">ブランディング動画製作</div>
+                    </div>
+                    <div>
+                        <p class="fontSize16px textAlignLeft">企業やサービスのブランドイメージや、信頼感を向上させるイベント映像や、インタビュー映像を制作します</p>
+                    </div>
+                </div>
+                <div class="services spServices">
+                    <a href="/snsVideo">
+                        <div class="borderWhite padding20px displayInlineblock">
+                            <img class="thirdSectionIcon" src="/image/snsMovieIcon.svg" alt="snsMovieIcon">
+                        </div>
+                    </a>
+                    <!-- <img class="thirdSectionIcon" src="/image/snsMovieIcon.svg" alt="snsMovieIcon"> -->
+                    <div>
+                        <div class="servicesHeding">SNS用動画製作</div>
+                    </div>
+                    <div>
+                        <p class="fontSize16px textAlignLeft">サービスや商品を認知してもらう窓口として、​ビューワーに刺さるSNS用ショートムービーを製作します</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="textAlignCenter paddingTopBottom60px">
+            <div class="textAlignCenter borderYellow toContactSection">
+                <div class="fontSize25px">お見積り・お問い合わせ</div>
+                <p class="toContactDiscription">
+                    弊社サービスについてもっと知りたい場合は、お気軽にお問い合わせ下さい。
+                </p>
+                <div class="toContactButtonWrap">
+                    <a class="toContactButtonTextChangeThemecolor" href="/postMail">無料お見積もりはこちら</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="fixedToContactButton transition07s">
+        <a href="/postMail" class="writingModeVerticalLr colorGray fontSize19px textDecorationNone transition07s">お問い合わせ</a>
+    </div>
+
+    <footer class="backgroundGray">
+        <div class="container">
+            <div class="colorWhite paddingTopBottom10px">
+                Copyright ©️ 2019 Lumen Studio powered by BASE, Inc.
+            </div>
+            <a href="/postMail" class="colorWhite">
+                <div class="textAlignCenter colorWhite displayInlineblock textDecorationUnderLine">
+                    お問い合わせ
+                </div>
+            </a>
+        </div>
+    </footer>
+    <script>
+        const stalker = document.querySelector('#stalker');
+
+        document.addEventListener('mousemove', function (e) {
+            stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+        });
+
+        const linkElem = document.querySelectorAll('a');
+        for (let i = 0; i < linkElem.length; i++) {
+            linkElem[i].addEventListener('mouseover', function (e) {
+                stalker.classList.add('linkHover');
+            });
+            linkElem[i].addEventListener('mouseout', function (e) {
+                hovFlag = false;
+                stalker.classList.remove('linkHover');
+            });
+        };
+    </script>
+</body>
+
+</html>

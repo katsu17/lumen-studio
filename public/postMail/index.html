@@ -1,39 +1,49 @@
 <!DOCTYPE html>
+<html>
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148326519-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148326519-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-148326519-1');
-</script>
+    gtag('config', 'UA-148326519-1');
+  </script>
 
-<meta charset="shift_jis">
-<meta http-equiv="content-style-type" content="text/css">
-<link rel="stylesheet" href="style.css" type="text/css">
-<link rel="stylesheet" href="../css/style.css" type="text/css">
-<link rel="stylesheet" href="../../css/cursor.css" type="text/css">
-<link rel="icon" href="/image/Lumens-LOGO-draft.ico">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<title>お問い合わせフォーム</title>
+  <meta charset="shift_jis">
+  <meta http-equiv="content-style-type" content="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <!-- <link rel="stylesheet" href="../../css/cursor.css" type="text/css"> -->
+  <link rel="icon" href="/image/Lumens-LOGO-draft.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>お問い合わせフォーム</title>
 
-<script src="../js/script.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
-	
+  <script src="../js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-	<div id="stalker"></div>
-	<header class="headerBackgroundColor">
+  <div id="stalker"></div>
+  <header class="headerBackgroundColor">
     <div class="menuShadow" onclick="togglemenu()"></div>
     <div class="flexSpaceBetween">
       <a class="headerLogo spHeaderLogo" href="/">
-        <img src="/image/Lumens-LOGO-draft.jpg" alt="" class="spLogoImage">
+        <img src="/image/Lumens-LOGO-draft.jpg" alt="lumenLogo" class="spLogoImage">
       </a>
       <!-- <img class="headerImage" src="/public/image/wantsukaTop2.jpg" alt=""> -->
       <div onclick="togglemenu()" class="flexAlignItemsCenter"><img class="menuIcon" src="/image/menuIcon.svg" alt=""></div>
       <ul class="flexCenter textAlignCenter pcMenus">
+        <li class="menu"><a href="/">Home<br>ホーム</a></li>
+        <li class="menu"><a href="/#strongPoint">About Us<br>ルーメンスタジオ</a></li>
+        <li class="menu"><a href="/#service">Service<br>サービス</a></li>
+        <li class="menu"><a href="/portfolio">Our Works<br>制作実績</a></li>
+        <li class="menu"><a href="/price">Price<br>価格</a></li>
+        <li class="menu"><a href="/postMail">Contact Us<br>お問い合わせ</a></li>
+      </ul>
+      <ul class="displayFlex spMenus">
         <li class="menu"><a href="/">ホーム</a></li>
         <li class="menu"><a href="/#strongPoint">特徴</a></li>
         <li class="menu"><a href="/#service">サービス</a></li>
@@ -41,92 +51,105 @@
         <li class="menu"><a href="/price">価格</a></li>
         <li class="menu"><a href="/postMail">お問い合わせ</a></li>
       </ul>
-      <ul class="displayFlex spMenus">
-          <li class="menu"><a href="/">ホーム</a></li>
-          <li class="menu"><a href="/#strongPoint">特徴</a></li>
-          <li class="menu"><a href="/#service">サービス</a></li>
-          <li class="menu"><a href="/portfolio">制作実績</a></li>
-          <li class="menu"><a href="/price">価格</a></li>
-          <li class="menu"><a href="/postMail">お問い合わせ</a></li>
-		</ul>
     </div>
   </header>
-	
-<div id="contactWrapper">
-    <div class="textAlignCenter">
-      <img src="/image/fujiyama.jpg" alt="" id="contactTopImage">
-			<div id="contactPageDisctioption">
-				<div>弊社サービスについてもっと知りたい場合は、お気軽にお問い合わせください。</div>
-				<div>ヒアリング後、お客様の予算内で最適の動画をご提案させて頂きます。</div>
-			</div>
-	</div>
 
-		<div id="section">
-			  <div id="pcCompanyAddress">
-				<h3>所在地</h3>
-				<div>
-				  〒104-0033<br>
-				  東京都中央区新川1-3-3<br>
-				  グリーンオーク茅場町6F
-				</div>
-				<div>
-				  Tel: 03-6452-8600
-				</div>
-				  <!--<div>
+  <div class="textAlignCenter backgroundImageContactPage maxWidth1280px marginAuto paddingTopBottom130px">
+    <div id="contactPageDisctioption">
+      <div class="fontSize30 fontWeightBold paddingTopBottom15px">お問い合わせ・無料お見積もり</div>
+      <div class="fontSize18px paddingTopBottom15px">弊社サービスについてもっと知りたい場合は、お気軽にお問い合わせください。</div>
+      <div class="fontSize18px paddingTopBottom15px">ヒアリング後、お客様の予算内で最適の動画をご提案させて頂きます。</div>
+    </div>
+  </div>
+
+  <div id="contactWrapper">
+    <div id="section">
+      <div id="pcCompanyAddress">
+        <div class="paddingBottom15px">
+          <span class="fontWeightBold">お問い合わせ・お見積もり</span>は、<br>
+          お電話でも受け付けております。
+        </div>
+        <div class="fontSize18px paddingTopBottom15px">
+          Email: lumen-studio@base-corp.co.jp
+        </div>
+        <div class="fontSize18px paddingTopBottom15px">
+          Tel: 03-6452-8600
+        </div>
+        <div>
+          〒104-0033<br>
+          東京都中央区新川1-3-3<br>
+          グリーンオーク茅場町6F
+        </div>
+
+        <!--<div>
 					<a href="https://twitter.com/LumenStudio5" target="blank"><img src="/image/twitterIcon.jpg" alt="twitter"></a>
 					<a href="https://www.instagram.com/lumen_studio_/" target="blank"><img src="/image/instagram.svg" width="39" height="39" alt="instagram"></a>
 				  </div>-->
-			  </div>
-					
-			<div id="body">
-			  <form action="./postmail.cgi" method="post" id="contactFormWrap">
-				<h2 id="heading">お問い合わせ</h2>
-				 <input type="hidden" name="need" value="name company position email phoneNumber message checkbox">
-				 <input type="hidden" name="sort" value="name company position email phoneNumber message checkbox">
-				 <input type="hidden" name="match" value="email email2">
-				 <div id="form-tbl">
-				  <input type="text" name="name" size="35" placeholder="氏名" id="themeColorBackGround contactFormName">
-				  <input type="text" name="company" size="35" placeholder="会社名" id="themeColorBackGround contactFormName">
-				  <input type="text" name="position" size="35" placeholder="役職" id="themeColorBackGround contactFormName">
-				  <input type="text" name="email" size="35" placeholder="メールアドレス" id="themeColorBackGround contactFormName">
-				  <input type="text" name="email2" size="35" placeholder="メールアドレス（再度入力）" class="themeColorBackGroundcontactFormName">
-				  <input type="text" name="phoneNumber" size="35" placeholder="電話番号" id="themeColorBackGround contactFormName">
-				  <textarea type="text" name="message" rows="7" cols="55" placeholder="問合せ内容" id="themeColorBackGround messageForm"></textarea>
-				 <form action="">
-				  <label for="" id="spLabel">
-				   <input type="checkbox" name="checkbox" id="checkBox">
-				   <a href="/privacy-policy">プライバシーポリシー</a>に同意します。
-				  </label>
-				 </form>
-				
-				
-				<div id="btn">
-				 <input type="submit" value="送信する" style="width: 160px; background-color: rgba(240, 215, 5, 1); border: 1px solid rgba(250, 226, 15, 1); margin-right: 20px;">
-				 <input type="reset" value="リセット" style="width: 160px; background-color: rgba(240, 215, 5, 1); border: 1px solid rgba(250, 226, 15, 1)">
-				</div>
-			  </form>
-			</div>
-			<div id="spCompanyAddress">
-				<h3>所在地</h3>
-				<div>
-				  〒104-0033<br>
-				  東京都中央区新川1-3-3<br>
-				  グリーンオーク茅場町6F
-				</div>
-				<div>
-				  Tel: 03-6452-8600
-				</div>
-				  <!--<div>
+      </div>
+
+      <div id="body">
+        <form action="./postmail.cgi" method="post" id="contactFormWrap">
+          <h2 id="heading" class="paddingLeft16px">お問い合わせ</h2>
+          <input type="hidden" name="need" value="name company position email phoneNumber message checkbox">
+          <input type="hidden" name="sort" value="name company position email phoneNumber message checkbox">
+          <input type="hidden" name="match" value="email email2">
+          <div id="form-tbl">
+            <div class="paddingTopBottom5px">
+              <div class="paddingLeft16px"><input type="text" required　name="name" size="35" placeholder="お名前" class=" contactFormName"></div>
+            </div>
+            <div class="paddingTopBottom5px">
+              <div class="paddingLeft16px"><input type="text" name="company" size="35" placeholder="会社名" class="paddingLeft16px contactFormName"></div>
+            </div>
+            <div class="paddingTopBottom5px displayFlexAlignItemsCenter"> <span class="paddingLeftRight5px">*</span>
+              <input type="text" required name="position" size="35" placeholder="役職" class="contactFormName"></div>
+            <div class="paddingTopBottom5px displayFlexAlignItemsCenter"> <span class="paddingLeftRight5px">*</span>
+              <input type="email" required name="email" size="35" placeholder="Eメールアドレス" class="contactFormName"></div>
+            <div class="paddingTopBottom5px displayFlexAlignItemsCenter"> <span class="paddingLeftRight5px">*</span>
+              <input type="email" required name="email2" size="35" placeholder="確認用Eメールアドレス" class="contactFormName"></div>
+            <div class="paddingTopBottom5px displayFlexAlignItemsCenter"> <span class="paddingLeftRight5px">*</span>
+              <input type="number" required name="phoneNumber" size="35" placeholder="電話番号" class="contactFormName"></div>
+            <div class="paddingTopBottom5px displayFlex"> <span class="paddingLeftRight5px">*</span> <textarea type="text"
+                required name="message" rows="7" cols="55" placeholder="問合せ内容" id=" messageForm"></textarea></div>
+            <form action="">
+              <label for="" id="spLabel" class="displayFlexAlignItemsCenter">
+                <span class="paddingLeftRight5px">*</span>
+                <input type="checkbox" name="checkbox" id="checkBox">
+                <div class="displayInlineBlock">
+                  <div>プライバシーポリシーに同意します。</div>
+                  <a href="/privacy-policy">プライバシーポリシー</a>
+                </div>
+              </label>
+            </form>
+
+
+            <div id="btn">
+              <input type="submit" value="送信" style="color: rgb(255, 255, 255); text-align: center; width: 160px; background-color: rgba(240, 215, 5, 1); border: 1px solid rgba(250, 226, 15, 1); margin-right: 20px;">
+              <!-- <input type="reset" value="リセット" style="width: 160px; background-color: rgba(240, 215, 5, 1); border: 1px solid rgba(250, 226, 15, 1)"> -->
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="spCompanyAddress">
+        <h3>所在地</h3>
+        <div>
+          〒104-0033<br>
+          東京都中央区新川1-3-3<br>
+          グリーンオーク茅場町6F
+        </div>
+        <div>
+          Tel: 03-6452-8600
+        </div>
+        <!--<div>
 					<a href="https://twitter.com/LumenStudio5" target="blank"><img src="/image/twitterIcon.jpg" alt="twitter"></a>
 					<a href="https://www.instagram.com/lumen_studio_/" target="blank"><img src="/image/instagram.svg" width="39" height="39" alt="instagram"></a>
 				  </div>-->
-			</div>
-	</div>
-	</div>
-</div>
+      </div>
+    </div>
+  </div>
 
-				
-<!--
+
+
+  <!--
 <h2>個人情報の取扱いについて</h2>
 <ol>
 <li>ご記入いただいた個人情報は、お問い合わせへの対応および確認のためのみに利用します。</li>
@@ -137,7 +160,7 @@
 
 
 
-<!--
+  <!--
       <div>
         <h3>お問い合わせ</h3>
         <div class="flexSpaceBetween">
@@ -161,28 +184,32 @@
         <div class="textAlignRight"><button class="sendButton">送信</button></div>
 			</div>
 -->
-			
-	
-<!--
+
+
+  <!--
 <div id="head">
 	<div id="head-in"><h1>CONTACT - postmail</h1></div>
 </div>
 -->
-	
 
-	
-<footer class="themeColorBackGround textAlignCenter">
-    <div class="textAlignCenter colorWhite">
-      Copyright &copy; 2019 Lumen Studio powered by BASE, Inc.
-    </div>
-    <a href="/postMail" class="colorWhite">
-      <div class="textAlignCenter colorWhite displayInlineblock">
-        お問い合わせ
+  <div class="fixedToContactButton transition07s">
+    <a href="/postMail" class="writingModeVerticalLr colorGray fontSize19px textDecorationNone transition07s">お問い合わせ</a>
+  </div>
+
+  <footer class="backgroundGray">
+    <div class="container">
+      <div class="colorWhite paddingTopBottom10px">
+        Copyright 2019 Lumen Studio powered by BASE, Inc.
       </div>
-    </a>
+      <a href="/postMail" class="colorWhite">
+        <div class="textAlignCenter colorWhite displayInlineblock textDecorationUnderLine">
+          お問い合わせ
+        </div>
+      </a>
+    </div>
   </footer>
-	
-<script>
+
+  <script>
     const stalker = document.querySelector('#stalker');
 
     document.addEventListener('mousemove', function (e) {
@@ -202,4 +229,5 @@
   </script>
 
 </body>
+
 </html>

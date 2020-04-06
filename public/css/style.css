@@ -16,14 +16,187 @@ li {
     list-style: none;
 }
 
-iframe body {
+/* iframe body {
     cursor: none;
+} */
+
+/* input, textarea {
+    cursor: none;
+} */
+
+.writingModeVerticalLr {
+    writing-mode: vertical-lr;
 }
 
-input, textarea {
-    cursor: none;
+.fixedToContactButton {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    writing-mode: vertical-lr;
+    position: fixed;
+    width: 40px;
+    height: 140px;
+    right: 30px;
+    bottom: 25px;
+    background-color: rgb(250, 226, 15);  
 }
 
+.transition07s {
+    transition: 0.7s;
+}
+
+.fixedToContactButton:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb( 0, 0, 0);
+    border: 2px solid rgb(250, 226, 15);
+}
+
+.fixedToContactButton a:hover {
+    color: rgb( 0, 0, 0);
+}
+
+.maxWidth850px {
+    max-width: 850px;
+}
+
+.maxWidth1000px {
+    max-width: 1000px;
+}
+
+.textDecorationUnderLine {
+    text-decoration: underline;
+}
+
+.backgroundGray {
+    background-color: rgb(65, 65, 65);
+}
+
+.padding5px {
+    padding: 5px;
+}
+
+.padding10px {
+    padding: 10px;
+}
+
+.padding15px {
+    padding: 15px;
+}
+
+.padding20px {
+    padding: 20px;
+}
+
+.padding30px {
+    padding: 30px;
+}
+
+.padding60px {
+    padding: 60px;
+}
+
+.paddingTop90px {
+    padding-top: 90px;
+}
+
+.paddingBottom5px {
+    padding-bottom: 5px;
+}
+
+.paddingBottom15px {
+    padding-bottom: 15px;
+}
+
+.paddingBottom30px {
+    padding-bottom: 30px;
+}
+
+.paddingBottom60px {
+    padding-bottom: 60px;
+}
+
+.paddingLeft50px {
+    padding-left: 50px;
+}
+
+.paddingLeftRight5px {
+    padding: 0 5px;
+}
+
+.paddingLeftRight30px {
+    padding: 0 30px;
+}
+
+.paddingTopBottom5px {
+    padding: 5px 0;
+}
+
+.paddingTopBottom10px {
+    padding: 10px 0;
+}
+
+.paddingTopBottom15px {
+    padding: 15px 0;
+}
+
+.paddingTopBottom20px {
+    padding: 20px 0;
+}
+
+.paddingTopBottom30px {
+    padding: 30px 0;
+}
+
+.paddingTopBottom60px {
+    padding: 60px 0;
+}
+
+.paddingTopBottom100px {
+    padding: 100px 0;
+}
+
+.borderRadius10px {
+    border-radius: 10px;
+}
+
+.borderRadius15px {
+    border-radius: 15px;
+}
+
+.paddingLeft50px {
+    padding-left: 50px;
+}
+
+.checkIcon {
+    width: 32px;
+    height: 25px;
+    margin: 0 16px;
+}
+
+.borderRed {
+    border: solid 2px #67BD31;
+}
+
+.borderBlue {
+    border: solid 2px #4E84C2;
+}
+
+.borderOrange {
+    border: solid 2px #FF8800;
+}
+
+.borderYellow {
+    border: solid 2px #FAE20F;
+}
+
+.borderGray {
+    border: solid 2px #A0A09F;
+}
+
+.borderWhite {
+    border: solid 2px rgb(255, 255, 255);
+}
 
 
 #topBackGroundVideo {
@@ -32,11 +205,6 @@ input, textarea {
     object-fit: cover;
     overflow: hidden;
     position: relative;
-}
-
-#strongPoint {
-    padding-top: 100px;
-    margin-top: -100px;
 }
 
 #service {
@@ -90,7 +258,20 @@ input, textarea {
     padding: 10px 20px;
     background-color: rgba(232, 208, 0, 1);
     border: solid rgba(250, 226, 15, 1) 1px;
-    cursor: none;
+    /* cursor: none; */
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+.toContactButtonTextChangeThemecolorWhite {
+    padding: 10px 20px;
+    background-color: rgba(232, 208, 0, 1);
+    border: solid rgba(250, 226, 15, 1) 1px;
+    /* cursor: none; */
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -103,8 +284,9 @@ input, textarea {
     padding: 10px 20px;
     background-color: rgba(232, 208, 0, 1);
     border: solid rgba(250, 226, 15, 1) 1px;
-    cursor: none;
-    color: #fff;
+    /* cursor: none; */
+    /* color: #fff; */
+    color: #414141;
     display: inline-block;
     text-decoration: none;
     font-size: 20px;
@@ -119,21 +301,30 @@ input, textarea {
 
 .toContactButtonTextChangeThemecolor:hover {
     background-color: rgba(232, 208, 0, 0);
-    color: rgba(8, 114, 158, 1);
+    color: rgba(250, 226, 15, 1);
+}
+
+.toContactButtonTextChangeThemecolorWhite:hover {
+    background-color: rgba(232, 208, 0, 0);
+    color: rgba(250, 226, 15, 1);
 }
 
 .toPricePageButton {
     text-align: center;
     padding: 10px 20px;
     border: solid rgba(250, 226, 15, 1) 1px;
-    cursor: none;
+    /* cursor: none; */
     color: #fff;
     display: inline-block;
     text-decoration: none;
-    font-size: 30px;
-    width: 410px;
+    font-size: 19px;
+    /* width: 410px; */
     margin: 0 auto;
     transition: all 1s;
+}
+
+.toPricePageButton:hover {
+    background-color:  rgba(232, 208, 0, 1);
 }
 
 .fourthSectionHeading {
@@ -143,7 +334,7 @@ input, textarea {
 }
 
 .fourthStrongPointWrap {
-    width: 380px;
+    width: 320px;
     padding: 20px;
     text-align: center;
 }
@@ -154,18 +345,22 @@ input, textarea {
 
 .fourthSectionBackgroundYellow {
     position: relative;
-    right: -650px;
-    background-color:  rgba(250, 226, 15, 1);
-    width: 700px;
-    height: 450px;
+    right: -15%;
+    border: solid 2px rgba(250, 226, 15, 1);
+    /* background-color:  rgba(250, 226, 15, 1); */
+    width: 450px;
+    /* height: 450px; */
+    margin: 0 auto;
 }
 
 .fourthSectionBackgroundThemeColor {
     position: relative;
-    right: -40px;
-    background-color: rgba(8, 114, 158, 1);
-    width: 700px;
-    height: 450px;
+    left: -15%;
+    border: solid 2px rgba(250, 226, 15, 1);
+    /* background-color: rgba(8, 114, 158, 1); */
+    width: 450px;
+    height: 400px;
+    margin: 0 auto;
 }
 
 .fourthSectionBackgroundThemeColor2 {
@@ -180,7 +375,7 @@ input, textarea {
 }
 
 .fourthSectionStrongPointDescription {
-    font-size: 20px;
+    font-size: 16px;
     padding: 30px;
 }
 
@@ -230,10 +425,6 @@ input, textarea {
     padding: 20px 0;
 }
 
-.servicesDescription {
-    font-size: 20px;
-}
-
 .flexDirectiionColumn {
     display: flex;
     flex-direction: column;
@@ -241,6 +432,7 @@ input, textarea {
 
 .toContactSection {
     padding: 20px 0;
+    display: inline-block;
 }
 
 .tayoriContactButton {
@@ -254,8 +446,8 @@ input, textarea {
     padding: 40px 30px 0 30px;
 }
 
-.toContactBttonWrap {
-    padding: 54px 0;
+.toContactButtonWrap {
+    padding: 25px 0;
 }
 
 footer {
@@ -289,7 +481,7 @@ footer {
 }
 
 .colorGray {
-    color: #999;
+    color: rgb(65, 65, 65);
 }
 
 .spTopImage {
@@ -348,12 +540,16 @@ footer {
 
 .strongPoint {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    align-items: center;
+    max-width: 790px;
+    margin: 0 auto;
+    padding: 15px 10px;
 }
 
-.strongPointWrap {
+/* .strongPointWrap {
     width: 200px
-}
+} */
 
 .strongPointUnderLine {
     background-color: rgba(250, 226, 15, 1);
@@ -374,19 +570,22 @@ footer {
 }
 
 .strongPointTitle {
-    position: absolute;
-    text-align: center;
-    height: 70px;
-    line-height: 100px;
-    width: 200px;
+    /* line-height: 100px; */
     font-size: 25px;
+    padding-bottom: 5px;
+    border-bottom: solid 2px rgb(250, 226, 15);
+}
+
+.borderBottomYellow {
+    border-bottom: solid 2px rgb(250, 226, 15);
 }
 
 .strongPointDiscription {
-    height: 100px;
-    width: 540px;
+    /* height: 100px; */
+    /* width: 540px; */
     display: flex;
     align-items: center;
+    max-width: 560px;
 }
 
 .flexSpaceEvenly {
@@ -394,12 +593,48 @@ footer {
     justify-content: space-evenly;
 }
 
-.fontSize25px {
-    font-size: 25px;
+.fontWeightBold {
+    font-weight: bold;
+}
+
+.fontSize12px {
+    font-size: 12px;
+}
+
+.fontSize14px {
+    font-size: 14px;
+}
+
+.fontSize16px {
+    font-size: 16px;
+}
+
+.fontSize18px {
+    font-size: 18px;
+}
+
+.fontSize19px {
+    font-size: 19px;
 }
 
 .fontSize20px {
     font-size: 20px;
+}
+
+.fontSize25px {
+    font-size: 25px;
+}
+
+.fontSize30px {
+    font-size: 30px;
+}
+
+.fontSize38px {
+    font-size: 38px;
+}
+
+.boxShadow5px {
+    box-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px;
 }
 
 header {
@@ -409,6 +644,7 @@ header {
     height: 90px;
     position: fixed;
     z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px;
 }
 
 .headerLogo {
@@ -468,14 +704,18 @@ header {
     color: #fff;
 }
 
+.colorYellow {
+    color: rgba(232, 208, 0, 1);
+}
+
 .spHeadding {
     font-size: 25px;
     margin-top: 30px;
 }
 
-.middleSection a {
+/* .middleSection a {
     cursor: none;
-}
+} */
 
 .middleSection h1 a {
     margin: 30px 0 0 20px;
@@ -664,7 +904,7 @@ header {
 @media screen and (min-width:720px) {
 
     .toContactDiscription {
-        font-size: 20px;
+        font-size: 16px;
     }
     
 
@@ -693,7 +933,7 @@ header {
     }
 
     .fourthStrongPointWrap {
-        width: 380px;
+        width: 320px;
         padding: 60px 0;
         text-align: left;
     }
@@ -732,13 +972,13 @@ header {
         min-width:561px;
         display:block;
         position:absolute;
-        top: 60px;
-        right: -400px;
+        top: 100px;
+        right: -530px;
     }        
 
     .pcFourthSectionMovie {
         top: 60px;
-        left: -450px;
+        left: -118%;
         z-index: 1;
         width:530px;
         height:314px;
@@ -758,6 +998,14 @@ header {
         margin: 0 auto;
     }
     
+    .menu {
+        font-size: 13px;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        width: 33%;
+        justify-content: center;
+    }
 
     .menuIcon {
         display: none;

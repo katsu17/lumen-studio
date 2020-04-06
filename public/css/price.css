@@ -1,19 +1,32 @@
-@import url("style.css");
+/* @import url("style.css"); */
+@import url("portfolio.css");
+
+
+.backgroundGrayPriceContent {
+    background-color: rgb(49, 49, 49);
+}
+
+.height170px {
+    height: 170px;
+}
 
 .priceTopWrapper {
     padding: 140px 0 50px 0;
     text-align: center;
-    color: rgba(8, 114, 158, 1);
 }
 
 .priceTopDiscription {
-    margin: 20px 0;
+    padding: 30px 0;
+    text-align: left;
+    margin: 0 auto;
     font-size: 20px;
+    max-width: 800px;
 }
 
 .section {
     text-align: center;
     padding: 20px 5%;
+    margin: 0;
 }
 
 .priceDiscriptionHeader {
@@ -46,6 +59,10 @@
     transform: translateY(100%);
 }
 
+.maxWidth1280px {
+    max-width: 1280px;
+}
+
 @media screen and (min-width: 720px) {
 
     .hqAnimationVideoPoster {
@@ -53,7 +70,8 @@
     }
     
     .section {
-        padding: 100px 300px;
+        padding: 100px 0;
+        margin: 0 auto;
     }
 
     .priceVideos {

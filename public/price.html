@@ -28,7 +28,7 @@
 
   <link rel="icon" href="/image/Lumens-LOGO-draft.ico">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/cursor.css">
+  <!-- <link rel="stylesheet" href="/css/cursor.css"> -->
   <link rel="stylesheet" href="/css/price.css">
   <script src="./js/script.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
@@ -40,22 +40,22 @@
     <div class="menuShadow" onclick="togglemenu()"></div>
     <div class="flexSpaceBetween">
       <a class="headerLogo spHeaderLogo" href="/">
-        <img src="/image/Lumens-LOGO-draft.jpg" alt="" class="spLogoImage">
+        <img src="/image/Lumens-LOGO-draft.jpg" alt="lumenLogo" class="spLogoImage">
       </a>
       <!-- <img class="headerImage" src="/public/image/wantsukaTop2.jpg" alt=""> -->
       <div onclick="togglemenu()" class="flexAlignItemsCenter"><img class="menuIcon" src="/image/menuIcon.svg" alt=""></div>
       <ul class="flexCenter textAlignCenter pcMenus">
-        <li class="menu"><a href="/">ホーム</a></li>
-        <li class="menu"><a href="/#strongPoint">特徴</a></li>
-        <li class="menu"><a href="/#service">サービス</a></li>
-        <li class="menu"><a href="/portfolio">制作実績</a></li>
-        <li class="menu"><a href="/price">価格</a></li>
-        <li class="menu"><a href="/postMail">お問い合わせ</a></li>
+        <li class="menu"><a href="/">Home<br>ホーム</a></li>
+        <li class="menu"><a href="/#aboutus">About Us<br>ルーメンスタジオ</a></li>
+        <li class="menu"><a href="/service">Service<br>サービス</a></li>
+        <li class="menu"><a href="/portfolio">Our Works<br>制作実績</a></li>
+        <li class="menu"><a href="/price">Price<br>価格</a></li>
+        <li class="menu"><a href="/postMail">Contact Us<br>お問い合わせ</a></li>
       </ul>
       <ul class="displayFlex spMenus">
         <li class="menu"><a href="/">ホーム</a></li>
         <li class="menu"><a href="/#strongPoint">特徴</a></li>
-        <li class="menu"><a href="/#service">サービス</a></li>
+        <li class="menu"><a href="/service">サービス</a></li>
         <li class="menu"><a href="/portfolio">制作実績</a></li>
         <li class="menu"><a href="/price">価格</a></li>
         <li class="menu"><a href="/postMail">お問い合わせ</a></li>
@@ -65,144 +65,157 @@
 
   <div class="">
     <div class="priceTopWrapper">
-      <h1>価格</h1>
+      <div class="fontSize30px borderBottomYellow paddingTopBottom5px displayInlineblock">価格</div>
       <div class="priceTopDiscription">
-        <p>ルーメンではお客様の予算内で、ハイクオリティーの動画を製作いたします。</p>
-        <p>また、実写映像の中にアニメーションを組み込む事も承っております。</p>
-        <p>お気軽にご相談や、お見積もりについてお問い合わせください。</p>
+        ルーメンスタジオではお客様の予算内で、高品質な動画を低価格で製作いたします。アニメーション動画は、IT、医療やサービスの仕組みまで、説明の難しい内容をインフォーメーショングラフィックによって伝えやすくします。また、インバウンド向けに多言語ナレーションの吹き替えや字幕翻訳も社内でスピーディーにご対応しています。お気軽にご相談や、お見積もりについてお問い合わせください。
       </div>
-      <button class="toContactButtonTextChangeThemecolor" onclick="location.href='/postMail'">お問い合わせ</button>
+      <button class="toContactButtonTextChangeThemecolorWhite" onclick="location.href='/postMail'">無料お見積もり</button>
     </div>
 
-    <div class="section themeColorBackGround colorWhite">
-      <div>
-        <h1>セミナー・講演レコーディング</h1>
-      </div>
-      <div class="pcFlexSpaceAround priceDitail">
+    <div class="section backgroundGrayPriceContent colorWhite">
+      <div class="maxWidth1000px marginAuto">
+        <div class="videos pcFlexSpaceAround">
+
+          <div class="spVideoWrap width420px">
+            <div class="fontSize30px paddingTopBottom15px textAlignCenter">映像撮影プラン</div>
+            <div class="fontSize25px paddingTopBottom15px textAlignCenter">5万円〜</div>
+            <div class="fontSize16px paddingTopBottom30px textAlignLeft height170px">実績記録・社員教育用セミナー・講演レコーディングなどの収録をします。収録後、ご希望の形式にて素材をお渡しします。</div>
+            <iframe src="https://player.vimeo.com/video/357701780?title=0&app_id=122963" frameborder="0" title="Cryptobloom Media"
+              allow="autoplay; fullscreen" allowfullscreen="1" class="portForioVideos pcPortForioVideos" data-ready="true">
+            </iframe>
+            <div class="textAlignLeft paddingTopBottom30px colorYellow fontSize20px">B91様</div>
+            <div class="textAlignLeft fontSize16px">
+              海外プロジェクトが来日し、開催したイベントを動画撮影及び編集をさせていただきました。<br>
+              <br>
+              用途目的：ブランディング、企業PR
+            </div>
+          </div>
+
+          <div class="spVideoWrap width420px">
+            <div class="fontSize30px paddingTopBottom15px textAlignCenter">おまかせ動画編集プラン</div>
+            <div class="fontSize25px paddingTopBottom15px textAlignCenter">3万円〜</div>
+            <div class="fontSize16px paddingTopBottom30px height170px">ヒアリングをさせて頂いた後、ご提供していただく画像や動画素材を元に、お任せで動画編集のみを行います。ご要望に応じてテロップ無料素材の入れ込みも可能！</div>
+            <iframe class="portForioVideos pcPortForioVideos" data-player-name="YouTube" frameborder="0"
+              allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Interview2"
+              src="https://www.youtube.com/embed/dMnHCrAFAVU ">
+            </iframe>
+            <div class="textAlignLeft paddingTopBottom30px colorYellow fontSize20px">日本オルソ株式会社様</div>
+            <div class="textAlignLeft fontSize16px">
+              展示会にご出展する前に、既存の健康食品の商品画像素材を元に動画編集させていただきました。<br>
+              <br>
+              用途目的：ブランディング、企業・商品PR、ECサイト・ホームページ、展示会
+            </div>
+          </div>
+        </div>
+
+        <div class="padding60px">
+          <div class="borderBottomYellow displayInlineblock width284px"></div>
+        </div>
+
         <div>
-          <iframe class="priceVideos" data-player-name="YouTube" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            title="YouTube video player" width="430px" height="240px" src="https://www.youtube.com/embed/fjgK_1UA2Dg"
-            id="widget2">
-          </iframe>
-        </div>
-        <div class="priceDiscription">
-          <h2>¥ 50,000〜</h2>
-          <h3 class="priceDiscriptionHeader">セミナー・講演レコーディング</h3>
-          <div>
-            企業イメージ・ブランドイメージや、信頼感をより得れるインタビュー・お客様の声動画を制作いたします。撮影・編集が含まれております。ローカライズや翻訳対応で、多言語対応が可能です。また海外から日本へローカライズする事も可能です。
+          <div class="fontSize30px paddingTopBottom15px textAlignCenter">インタビュー・企業動画</div>
+          <div class="fontSize25px paddingTopBottom15px textAlignCenter">10万円〜</div>
+          <div class="pcFlexSpaceAround priceDitail">
+            <div>
+              <iframe class="priceVideos" data-player-name="YouTube" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                title="YouTube video player" width="430px" height="240px" src="https://www.youtube.com/embed/mLQ_mfeUe_I"
+                id="widget12">
+              </iframe>
+            </div>
+            <div class="paddingLeftRight30px">
+              <div class="textAlignLeft paddingBottom30px colorYellow fontSize20px">株式会社グッドラックスリー様</div>
+              <div class="textAlignLeft fontSize16px">
+                企業イメージ・ブランドイメージ及び信頼感をより得れるインタビューを制作しました。質問の準備、撮影・編集が含まれております。ローカライズの為、多言語対応しています。<br>
+                <br>
+                用途目的：ブランディング、企業PR
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div>
-        <h1>インタビュー・企業動画製作</h1>
-      </div>
-      <div class="pcFlexSpaceAround priceDitail">
+        <div class="padding60px">
+          <div class="borderBottomYellow displayInlineblock width284px"></div>
+        </div>
+
         <div>
-          <iframe class="priceVideos" data-player-name="YouTube" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            title="YouTube video player" width="430px" height="240px" src="https://www.youtube.com/embed/mLQ_mfeUe_I"
-            id="widget12">
-          </iframe>
-        </div>
-        <div class="priceDiscription">
-          <h2>¥ 150,000〜</h2>
-          <h3 class="priceDiscriptionHeader">実写インタビュー・企業動画</h3>
-          <div>
-            企業イメージ・ブランドイメージや、信頼感をより得れるインタビュー・お客様の声動画を制作いたします。撮影・編集が含まれております。ローカライズや翻訳対応で、多言語対応が可能です。また海外から日本へローカライズする事も可能です。
+          <div class="fontSize30px paddingTopBottom15px textAlignCenter">企業説明動画</div>
+          <div class="fontSize25px paddingTopBottom15px textAlignCenter">30万円〜50万円</div>
+          <div class="pcFlexSpaceAround priceDitail">
+            <div>
+              <iframe class="priceVideos" data-player-name="YouTube" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                title="YouTube video player" width="410px" height="240px" src="https://www.youtube.com/embed/qtGpyGgdgr4?autoplay=0&amp;mute=0&amp;controls=1&amp;loop=0&amp;origin=https%3A%2F%2Fwww.lumen-studio.jp&amp;playsinline=1&amp;enablejsapi=1&amp;widgetid=7"
+                id="widget8">
+              </iframe>
+            </div>
+            <div class="paddingLeftRight30px">
+              <div class="textAlignLeft paddingBottom30px colorYellow fontSize20px">株式会社ベイス</div>
+              <div class="textAlignLeft fontSize16px">
+                国内外でビジネスをされている企業の為、社風の撮影の他、既存の実写映像のほかにCGも組み込み、グローバル感を表現しました。<br>
+                <br>
+                用途目的：リクルート、ブランディング、企業PR、ECサイト・ホームページ
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- <div>
-        <h1>SNS</h1>
-      </div>
-      <div class="pcFlexSpaceAround priceDitail">
+        <div class="padding60px">
+          <div class="borderBottomYellow displayInlineblock width284px"></div>
+        </div>
+
         <div>
-          <iframe class="Video1423133661--playerContainer" data-player-name="YouTube" frameborder="0" allowfullscreen="1"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player"
-            width="400px" height="240px" src="https://www.youtube.com/embed/dz39L5SI75k?autoplay=0&amp;mute=0&amp;controls=1&amp;loop=0&amp;origin=https%3A%2F%2Fwww.lumen-studio.jp&amp;playsinline=1&amp;enablejsapi=1&amp;widgetid=13"
-            id="widget14">
-          </iframe>
-        </div>
-        <div class="priceDiscription">
-          <h2>15万円〜</h2>
-          <h3 class="priceDiscriptionHeader">SNS動画</h3>
-          <div>
-            スマホでSNS動画を観る時代に、短い再生時間の中で伝えたいメッセージを表現するならルーメンにお任せください。<br>
-            Instagram, Twitter, Facebook, YouTubeなどを対応しています。
+          <div class="fontSize30px paddingTopBottom15px textAlignCenter">フルアニメーション動画</div>
+          <div class="fontSize25px paddingTopBottom15px textAlignCenter">30万円〜 60万円</div>
+          <div class="videos pcFlexSpaceAround">
+
+            <div class="spVideoWrap width420px">
+              <iframe src="https://www.youtube.com/embed/Ob4u18HFn9U" frameborder="0" title="Cryptobloom Media" allow="autoplay; fullscreen"
+                allowfullscreen="1" class="portForioVideos pcPortForioVideos" data-ready="true">
+              </iframe>
+              <div class="textAlignLeft paddingTopBottom30px colorYellow fontSize20px">中央システム株式会社様</div>
+              <div class="textAlignLeft fontSize16px">
+                ICT企業の理念動画をアニメーションで表現しました。「ICT（お仕事）と生活を楽しむ事で、より豊かになる」という良いサイクルを表現しました。<br>
+                <br>
+                用途目的：リクルート、ブランディング
+              </div>
+            </div>
+
+            <div class="spVideoWrap width420px">
+              <iframe class="portForioVideos pcPortForioVideos" data-player-name="YouTube" frameborder="0"
+                allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                title="Interview2" src="https://www.youtube.com/embed/KQGaopStf9M">
+              </iframe>
+              <div class="textAlignLeft paddingTopBottom30px colorYellow fontSize20px">株式会社ドクターズプライム様</div>
+              <div class="textAlignLeft fontSize16px">
+                医療業界のマッチングサイトの仕組説明を簡単に伝わる様に、アニメーションで表現した動画です。医療などの業界は特にアニメーションと相性がいいです。 <br>
+                <br>
+                用途目的：展示会、営業
+              </div>
+            </div>
           </div>
         </div>
-      </div> -->
 
-      <div>
-        <h1>実写動画</h1>
-      </div>
-      <div class="pcFlexSpaceAround priceDitail">
-        <div>
-          <iframe class="priceVideos" data-player-name="YouTube" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            title="YouTube video player" width="410px" height="240px" src="https://www.youtube.com/embed/qtGpyGgdgr4?autoplay=0&amp;mute=0&amp;controls=1&amp;loop=0&amp;origin=https%3A%2F%2Fwww.lumen-studio.jp&amp;playsinline=1&amp;enablejsapi=1&amp;widgetid=7"
-            id="widget8">
-          </iframe>
+        <div class="buttonWrap">
+          <button class="toContactButtonTextChangeThemecolor" onclick="location.href='/postMail'">無料お見積もり</button>
         </div>
-        <div class="priceDiscription">
-          <h2>¥ 300,000〜 ¥ 500,000</h2>
-          <h3 class="priceDiscriptionHeader">実写＋アニメーション動画</h3>
-          <div>
-            しっかりヒアリングをしたうえで提案をし、ご要望に合わせた実写動画を製作いたします。<br>
-            会社案内、商品PR、リクルート、研修、など様々な種類の動画をお作りします。また、実写映像の中にアニメーションを組み込んだ動画も承っております。
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <h1>フルアニメーション動画</h1>
-      </div>
-      <div class="pcFlexSpaceAround priceDitail">
-        <div>
-          <iframe src="https://player.vimeo.com/video/262233782?title=0&amp;app_id=122963" class="priceVideos"
-            frameborder="0" title="Cryptobloom Media" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true">
-          </iframe>
-        </div>
-        <div class="priceDiscription">
-          <h2>¥ 300,000〜 ¥ 600,000</h2>
-          <h3 class="priceDiscriptionHeader">オリジナルフルアニメーション動画</h3>
-          <div>
-            アニメーション動画は、サービス詳細やアプリケーションの機能など、抽象的なものを分かりやすく伝えることが出来ます。国内外のクリエイターを抱えているルーメンでは、クオリティの高いオリジナルフルアニメーション動画を作れる強みを持っています。海外にアプローチする際のデザイン性の提案力も我々の強みです。
-          </div>
-        </div>
-      </div>
-
-      <!-- <div>
-        <h1>HQアニメーション動画</h1>
-      </div>
-      <div class="pcFlexSpaceAround priceDitail">
-        <div class="priceVideos" style="background-color: rgb(250, 226, 15);">
-          <p class="hqAnimationVideoPoster">対面後ご提示可能</p>
-        </div>
-        <div class="priceDiscription">
-          <h2>¥ 600,000〜応相談</h2>
-          <h3 class="priceDiscriptionHeader">オリジナルフルアニメーション動画</h3>
-          <div>
-            アニメーション動画は、サービス詳細やアプリケーションの機能など、抽象的なものを分かりやすく伝えることが出来ます。国内外のクリエイターを抱えているルーメンでは、クオリティの高いオリジナルフルアニメーション動画を作れる強みを持っています。海外にアプローチする際のデザイン性の提案力も我々の強みです。
-          </div>
-        </div>
-      </div> -->
-
-      <div class="buttonWrap">
-        <button class="toContactButton" onclick="location.href='/postMail'">お問い合わせ</button>
       </div>
     </div>
   </div>
 
-  <footer class="themeColorBackGround textAlignCenter">
-    <div class="textAlignCenter colorWhite">
-      Copyright ©️ 2019 Lumen Studio powered by BASE, Inc.
-    </div>
-    <a href="/postMail" class="colorWhite">
-      <div class="textAlignCenter colorWhite displayInlineblock">
-        お問い合わせ
+  <div class="fixedToContactButton transition07s">
+    <a href="/postMail" class="writingModeVerticalLr colorGray fontSize19px textDecorationNone transition07s">お問い合わせ</a>
+  </div>
+
+  <footer class="backgroundGray">
+    <div class="container">
+      <div class="colorWhite paddingTopBottom10px">
+        Copyright ©️ 2019 Lumen Studio powered by BASE, Inc.
       </div>
-    </a>
+      <a href="/postMail" class="colorWhite">
+        <div class="textAlignCenter colorWhite displayInlineblock textDecorationUnderLine">
+          お問い合わせ
+        </div>
+      </a>
+    </div>
   </footer>
   <script>
     const stalker = document.querySelector('#stalker');

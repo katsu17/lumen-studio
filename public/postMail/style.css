@@ -1,32 +1,27 @@
 @import url("style.css");
-@import url("portfolio.css");
-@import url("postMail.css")
+@import url("../css/style.css");
+@import url("../css/portfolio.css");
+@import url("../css/postMail.css");
 /* for body */
 
-
-#themeColorBackGround {
-    background-color: rgba(8, 114, 158, 1);
-}
 
 #themeColor {
     color: rgba(8, 114, 158, 1);
 }
 
 #contactWrapper {
-    padding: 200px 250px 0 250px;
-}
-
-#contactTopImage {
-	
+	padding: 100px 0;
+	margin: 0 auto;
+	max-width: 1000px;
 }
 
 #contactPageDisctioption {
 	padding: 30px;
-	font-size: 20px;
+	font-size: 25px;
 }
 
 #contactFormName {
-    background-color: rgba(8, 114, 158, 1);
+    /* background-color: rgba(8, 114, 158, 1); */
     font-size: 20px;
     margin: 0 20px 20px 0;
     width: 200px;
@@ -63,8 +58,74 @@
     transition: all 1s;
 }
 
+.contactForm {
+	font-size: 20px;
+    margin: 0 20px 20px 0;
+    width: 200px;
+    height: 35px;
+}
+
+.maxWidth1400px {
+	max-width: 1400px;
+}
+
+
+
+.fontSize18px {
+	font-size: 18px;
+}
+
+.paddingBottom15px {
+	padding-bottom: 15px;
+}
+
+.paddingLeft16px {
+	padding-left: 16.2px;
+}
+
+.paddingLeftRight5px {
+	padding: 0 5px;
+}
+
+.paddingTopBottom5px {
+	padding: 5px 0;
+}
+
+.paddingTopBottom15px {
+	padding: 15px 0;
+}
+
+.paddingTopBottom130px {
+	padding: 130px 0;
+}
+
+.backgroundImageContactPage {
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(https://static.wixstatic.com/media/82e83e_71056fcb7294458590cf1f87505f3ab4~mv2.png/v1/crop/x_57,y_1,w_887,h_372/fill/w_1064,h_446,al_c,lg_1,q_90/%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B-%E8%83%8C%E6%99%AF.webp);
+}
+
+.displayFlexAlignItemsCenter {
+	display: flex;
+	align-items: center;
+}
+
+.fontFamilyArial {
+	font-family: Arial;
+}
+
+.fontFamilyHelvetica {
+	font-family: Helvetica;
+}
+
+.fontFamilySans-seri {
+	font-family: sans-seri;
+}
+
+
 ::placeholder {
-    color: #fff;
+    color: #aaa;
 }
 
 input {
@@ -76,23 +137,43 @@ textarea {
   font-size: 19px;
 }
 
-input, textarea {
-  width: 437px;
-  margin-bottom: 5px;
-  outline: none;
-  border: 1px solid #aaa;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  display: block;
-  color: #fff;
-  background-color: rgba(8, 114, 158, 1);
+input[type=text]:valid,
+input[type=email]:valid,
+textarea:valid {
+	color: #333;
+	border-color: #ccc;
+	background: #fff;
+}
+
+input, textarea,
+input[type=text]:valid,
+input[type=email]:valid,
+textarea:valid {
+	padding: 10px;
+	width: 437px;
+	margin-bottom: 5px;
+	outline: none;
+	border: 1px solid rgba(0, 166, 255, 7);
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	display: block;
+	color: #aaa;
+	border-radius: 5px;
+	/* background-color: rgba(8, 114, 158, 1); */
+}
+
+input[type=text]:required,
+input[type=email]:required,
+input[type=email]:invalid,
+textarea:required {
+	border: #dd0000 solid 1px;
 }
 
 li a {
 	font-size: 16px;
 }
 
-ÅîpcCompanyAddress {
+#pcCompanyAddress {
 	font-size: 20px;
 }
 
@@ -105,11 +186,11 @@ li a {
 	justify-content: space-around;
 }
 
-input:focus,
+/* input:focus,
 textarea:focus {
   box-shadow: 0 0 7px #1abc9c;
   border: 1px solid #1abc9c;
-}
+} */
 
 #checkBox{
 	width: 20px;
@@ -121,13 +202,17 @@ textarea:focus {
 	display: inline-block;
 }
 
+.displayInlineBlock {
+	display: inline-block;
+}
+
 /*postMail original*/
 
 body {
 	margin: 0;
 	padding: 0;
 	font-size: 90%;
-	background: #f0f0f0;
+	background: rgb( 255, 255, 255);
 	color: #000;
 	font-family: Verdana,"MS PGothic",Osaka,Arial,sans-serif;
 }
@@ -188,8 +273,13 @@ p.btn input {
 
 #btn { 
 	display: flex;
+	justify-content: center;
 	width: 437px;
 	padding: 20px 0; 
+}
+
+#btn:placeholder {
+    color: #fff;
 }
 
 /* for title */
@@ -217,7 +307,18 @@ form.back {
 	margin-top: 2em;
 }
 
-/* ÉXÉ}Ézóp */
+@media screen and (min-width: 720px){
+	.menu a {
+		font-size: 13px;
+		/* line-height: normal;
+		display: flex;
+		align-items: center;
+		width: 33%;
+		justify-content: center; */
+	}
+}
+
+/* ÔøΩXÔøΩ}ÔøΩzÔøΩp */
 @media only screen and (max-width: 480px) {
 	input, textarea { width: 315px; display: inline-block; }
 	#body { margin-left: 0; }
@@ -233,7 +334,7 @@ form.back {
 	#spLabel{ display: block; }
 	#heading{ text-align: center; margin: 0 auto; }
 
-	/* ìäçeÉtÉHÅ[ÉÄ */
+	/* ÔøΩÔøΩÔøΩeÔøΩtÔøΩHÔøΩ[ÔøΩÔøΩ */
 	#form-tbl { margin: 0 auto; text-align: center; }
 	#form { width: 96%; margin: 10px auto; }
     #form th, #form td {
@@ -246,9 +347,9 @@ form.back {
     #form tr:first-child th	{ border-top: 1px solid #666; }
     p.btn input { width: 10em; }
     
-	/* è¨å©èoÇµ */
+	/* ÔøΩÔøΩÔøΩÔøΩÔøΩoÔøΩÔøΩ */
 	h2 { margin: 1em 3px; width: 90%; }
 	
-	/* ÉTÉìÉNÉX */
+	/* ÔøΩTÔøΩÔøΩÔøΩNÔøΩX */
 	p.msg { margin: 1em auto; }
 }

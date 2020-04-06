@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148326519-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148326519-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lumen Studio</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/6.3.4/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/6.3.4/firebase-auth.js"></script>
+    <script defer src="/__/firebase/6.3.4/firebase-database.js"></script>
+    <script defer src="/__/firebase/6.3.4/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/6.3.4/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <link rel="icon" href="/image/Lumens-LOGO-draft.ico">
+    <link rel="stylesheet" href="/css/service.css">
+    <!-- <link rel="stylesheet" href="/css/cursor.css"> -->
+    <script src="./js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="stalker"></div>
+    <header class="headerBackgroundColor">
+        <div class="menuShadow" onclick="togglemenu()"></div>
+        <div class="flexSpaceBetween">
+            <a class="headerLogo spHeaderLogo" href="/">
+                <img src="/image/Lumens-LOGO-draft.jpg" alt="lumenLogo" class="spLogoImage">
+            </a>
+            <!-- <img class="headerImage" src="/public/image/wantsukaTop2.jpg" alt=""> -->
+            <div onclick="togglemenu()" class="flexAlignItemsCenter"><img class="menuIcon" src="/image/menuIcon.svg"
+                    alt=""></div>
+            <ul class="flexCenter textAlignCenter pcMenus">
+                <li class="menu"><a href="/">Home<br>ホーム</a></li>
+                <li class="menu"><a href="/#aboutus">About Us<br>ルーメンスタジオ</a></li>
+                <li class="menu"><a href="/service">Service<br>サービス</a></li>
+                <li class="menu"><a href="/portfolio">Our Works<br>制作実績</a></li>
+                <li class="menu"><a href="/price">Price<br>価格</a></li>
+                <li class="menu"><a href="/postMail">Contact Us<br>お問い合わせ</a></li>
+            </ul>
+            <ul class="displayFlex spMenus">
+                <li class="menu"><a href="/">ホーム</a></li>
+                <li class="menu"><a href="/#strongPoint">特徴</a></li>
+                <li class="menu"><a href="/service">サービス</a></li>
+                <li class="menu"><a href="/portfolio">制作実績</a></li>
+                <li class="menu"><a href="/price">価格</a></li>
+                <li class="menu"><a href="/postMail">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <div class="paddingTopBottom100px">
+
+        <div class="textAlignCenter paddingTopBottom60px maxWidth610px marginAuto">
+            <div class="borderWhite padding20px displayInlineblock">
+                <img class="thirdSectionIcon" src="/image/snsMovieIcon.svg" alt="animationMovieIcon">
+            </div>
+            <div class="textAlignCenter borderYellow toContactSection">
+                <div class="fontSize25px">SNS動画製作</div>
+                <p class="toContactDiscription">
+                    サービスや商品を認知してもらう窓口として、​ビューワーに刺さるSNS用ショートムービーを製作します
+                </p>
+            </div>
+        </div>
+
+        <div class="textAlignCenter">
+            <iframe class="boxShadow5px" title="vimeo-player" src="https://player.vimeo.com/video/363238929" width="387"
+                height="387" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="maxWidth850px marginAuto">
+            <div class="fontSize18px paddingLeft50px">
+                <div class="fontSize20px paddingTopBottom60px">Jimmy's様</div>
+
+                <div class="paddingBottom15px fontWeightBold">動画制作の背景</div>
+                中央区のバル・レストランのSNS向けプロモーション動画<br>
+                <br>
+                <div class="paddingBottom15px fontWeightBold">制作のポイント</div>
+                ディナーメニューにはお洒落なお肉の盛り合わせを安価で美味しいワインと上品に楽しめる事を表現して制作しました。<br>
+                <br>
+                <div class="paddingTopBottom30px"><span class="paddingTopBottom30px fontWeightBold">用途目的</span>：SNS</div>
+                <br>
+                <!-- 目に見えないサービスの説明や販売は難しいと考える企業様が多い中、撮影が出来ない仕組みやサービスの説明はアニメーション動画で解決！<br> -->
+            </div>
+        </div>
+
+
+        <div class="textAlignCenter paddingTopBottom60px">
+            <div class="textAlignCenter borderYellow toContactSection">
+                <div class="fontSize25px">お見積り・お問い合わせ</div>
+                <p class="toContactDiscription">
+                    弊社サービスについてもっと知りたい場合は、お気軽にお問い合わせ下さい。
+                </p>
+                <div class="toContactButtonWrap">
+                    <a class="toContactButtonTextChangeThemecolorWhite" href="/postMail">無料お見積もりはこちら</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="fixedToContactButton transition07s">
+        <a href="/postMail" class="writingModeVerticalLr colorGray fontSize19px textDecorationNone transition07s">お問い合わせ</a>
+    </div>
+
+
+    <footer class="backgroundGray">
+        <div class="container">
+            <div class="colorWhite paddingTopBottom10px">
+                Copyright ©️ 2019 Lumen Studio powered by BASE, Inc.
+            </div>
+            <a href="/postMail" class="colorWhite">
+                <div class="textAlignCenter colorWhite displayInlineblock textDecorationUnderLine">
+                    お問い合わせ
+                </div>
+            </a>
+        </div>
+    </footer>
+    <script>
+        const stalker = document.querySelector('#stalker');
+
+        document.addEventListener('mousemove', function (e) {
+            stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+        });
+
+        const linkElem = document.querySelectorAll('a');
+        for (let i = 0; i < linkElem.length; i++) {
+            linkElem[i].addEventListener('mouseover', function (e) {
+                stalker.classList.add('linkHover');
+            });
+            linkElem[i].addEventListener('mouseout', function (e) {
+                hovFlag = false;
+                stalker.classList.remove('linkHover');
+            });
+        };
+    </script>
+</body>
+
+</html>

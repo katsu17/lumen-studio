@@ -26,8 +26,38 @@
       {
         "source": "/privacy-policy",
         "destination": "/privacy-policy.html"
+      },
+      {
+        "source": "/service",
+        "destination": "/service.html"
+      },
+      {
+        "source": "/animationVideo",
+        "destination": "/animationVideo.html"
+      },
+      {
+        "source": "/liveActionVideo",
+        "destination": "/liveActionVideo.html"
+      },
+      {
+        "source": "/interviewVideo",
+        "destination": "/interviewVideo.html"
+      },
+      {
+        "source": "/snsVideo",
+        "destination": "/snsVideo.html"
       }
-
+    ],
+    "headers": [
+      {
+        "source": "/postMail",
+        "headers": [
+          {
+            "key" : "Content-Type",
+            "value" : "text/html; charset=Shift_JIS"
+          }
+        ]
+      }
     ]
 
   }
