@@ -46,9 +46,17 @@
       <!-- <img class="headerImage" src="/public/image/wantsukaTop2.jpg" alt=""> -->
       <div onclick="togglemenu()" class="flexAlignItemsCenter"><img class="menuIcon" src="/image/menuIcon.svg" alt=""></div>
       <ul class="flexCenter textAlignCenter pcMenus">
-        <li class="menu"><a href="/">Home<br>ホーム</a></li>
+        <li class="menu"><a href="/" id="headerColorYellow">Home<br>ホーム</a></li>
         <li class="menu"><a href="/#aboutus">About Us<br>ルーメンスタジオ</a></li>
-        <li class="menu"><a href="/service">Service<br>サービス</a></li>
+        <li class="menu flexDirectiionColumn menu__single">
+          <a href="/service">Service<br>サービス</a>
+          <ul class="menu__second-level">
+            <li><a href="/animationVideo">アニメーション動画製作</a></li>
+            <li><a href="/liveActionVideo">実写動画製作</a></li>
+            <li><a href="/interviewVideo">ブランディング動画製作</a></li>
+            <li><a href="/snsVideo">SNS用動画製作</a></li>
+          </ul>
+        </li>
         <li class="menu"><a href="/portfolio">Our Works<br>制作実績</a></li>
         <li class="menu"><a href="/price">Price<br>価格</a></li>
         <li class="menu"><a href="/postMail">Contact Us<br>お問い合わせ</a></li>
@@ -189,7 +197,7 @@
       <div class="pcDisplayFlexCenter">
         <div class="services spServices">
           <a href="/animationVideo">
-            <div class="borderWhite padding20px displayInlineblock">
+            <div class="borderWhite padding20px displayInlineblock changeBackgroundColorWhite">
               <img class="thirdSectionIcon" src="/image/animationMovieIcon.svg" alt="animationMovieIcon">
             </div>
           </a>
@@ -202,7 +210,7 @@
         </div>
         <div class="services spServices">
           <a href="/liveActionVideo">
-            <div class="borderWhite padding20px displayInlineblock">
+            <div class="borderWhite padding20px displayInlineblock changeBackgroundColorWhite">
               <img class="thirdSectionIcon" src="image/realMovieIcon.svg" alt="animationMovieIcon">
             </div>
           </a>
@@ -218,7 +226,7 @@
       <div class="pcDisplayFlexCenter">
         <div class="services spServices">
           <a href="/interviewVideo">
-            <div class="borderWhite padding20px displayInlineblock">
+            <div class="borderWhite padding20px displayInlineblock changeBackgroundColorWhite">
               <img class="thirdSectionIcon" src="image/interviewMovieIcon.svg" alt="animationMovieIcon">
             </div>
           </a>
@@ -232,7 +240,7 @@
         </div>
         <div class="services spServices">
           <a href="/snsVideo">
-            <div class="borderWhite padding20px displayInlineblock">
+            <div class="borderWhite padding20px displayInlineblock changeBackgroundColorWhite">
               <img class="thirdSectionIcon" src="image/snsMovieIcon.svg" alt="animationMovieIcon">
             </div>
           </a>
@@ -247,7 +255,7 @@
       </div>
     </div>
     <div class="textAlignCenter">
-      <a class="toPricePageButton spToPricePageButton" href="/price">サービスについて知りたい</a>
+      <a class="toPricePageButton spToPricePageButton" href="/service">サービスについて知りたい</a>
     </div>
   </div>
 

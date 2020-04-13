@@ -1,101 +1,95 @@
 <!DOCTYPE html>
+<html lang="ja">
+
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148326519-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-148326519-1');
-</script>
-
-<meta charset="shift_jis">
-<meta http-equiv="content-style-type" content="text/css">
-<link rel="stylesheet" href="style.css" type="text/css">
-<link rel="stylesheet" href="../../css/style.css" type="text/css">
-<link rel="stylesheet" href="../../css/cursor.css" type="text/css">
-<link rel="icon" href="/image/Lumens-LOGO-draft.ico">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<title>???M????</title>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148326519-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 	
-<script src="../js/script.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
-
+	  gtag('config', 'UA-148326519-1');
+	</script>
+	
+	<meta charset="shift_jis">
+	<meta http-equiv="content-style-type" content="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="../../css/style.css" type="text/css">
+	<!-- <link rel="stylesheet" href="../../css/cursor.css" type="text/css"> -->
+	<link rel="icon" href="/image/Lumens-LOGO-draft.ico">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		
+	<script src="../js/script.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+	<title>送信完了</title>
 </head>
+
 <body>
-	<div id="stalker"></div>
-  <header class="headerBackgroundColor">
-    <div class="menuShadow" onclick="togglemenu()"></div>
-    <div class="flexSpaceBetween">
-      <a class="headerLogo spHeaderLogo" href="/">
-        <img src="/image/Lumens-LOGO-draft.jpg" alt="" class="spLogoImage">
-      </a>
-      <!-- <img class="headerImage" src="/public/image/wantsukaTop2.jpg" alt=""> -->
-      <div onclick="togglemenu()" class="flexAlignItemsCenter"><img class="menuIcon" src="/image/menuIcon.svg" alt=""></div>
-      <ul class="flexCenter textAlignCenter pcMenus">
-        <li class="menu"><a href="/">?z?[??</a></li>
-        <li class="menu"><a href="/#strongPoint">????</a></li>
-        <li class="menu"><a href="/#service">?T?[?r?X</a></li>
-        <li class="menu"><a href="/portfolio">???????</a></li>
-        <li class="menu"><a href="/price">???i</a></li>
-        <li class="menu"><a href="/postMail">????????</a></li>
-      </ul>
-      <ul class="displayFlex spMenus">
-          <li class="menu"><a href="/">?z?[??</a></li>
-          <li class="menu"><a href="/#strongPoint">????</a></li>
-          <li class="menu"><a href="/#service">?T?[?r?X</a></li>
-          <li class="menu"><a href="/portfolio">???????</a></li>
-          <li class="menu"><a href="/price">???i</a></li>
-          <li class="menu"><a href="/postMail">????????</a></li>      </ul>
-    </div>
-  </header>
-	
-<div id="body">
-	<div style="padding-top: 100px;">
-	 <h2>?????????t?H?[?? &gt; ???M????</h2>
-	 <div id="form-tbl">
-	 <p class="msg">
-		?????p???�b???????????????B<br>
-		???[?????M?????????????????B
-	 </p>
-	 <p class="btn">
-	 <a href="/" id="toTopButton" >Top????</a>
-	<!--<input type="button" value="?g?b?v????" onclick="window.open('!back!','_top')">-->
-	 </p>
-	 </div>
+
+	<header class="headerBackgroundColor">
+		<div class="menuShadow" onclick="togglemenu()"></div>
+		<div class="flexSpaceBetween">
+			<a class="headerLogo spHeaderLogo" href="/">
+				<img src="/image/Lumens-LOGO-draft.jpg" alt="lumenLogo" class="spLogoImage">
+			</a>
+			<!-- <img class="headerImage" src="/public/image/wantsukaTop2.jpg" alt=""> -->
+			<div onclick="togglemenu()" class="flexAlignItemsCenter"><img class="menuIcon" src="/image/menuIcon.svg" alt=""></div>
+			<ul class="flexCenter textAlignCenter pcMenus">
+				<li class="menu"><a href="/">Home<br>ホーム</a></li>
+				<li class="menu"><a href="/#strongPoint">About Us<br>ルーメンスタジオ</a></li>
+				<li class="menu flexDirectiionColumn menu__single">
+					<a href="/service">Service<br>サービス</a>
+					<ul class="menu__second-level">
+						<li><a href="/animationVideo">アニメーション動画製作</a></li>
+						<li><a href="/liveActionVideo">実写動画製作</a></li>
+						<li><a href="/interviewVideo">ブランディング動画製作</a></li>
+						<li><a href="/snsVideo">SNS用動画製作</a></li>
+					</ul>
+				</li>
+				<li class="menu"><a href="/portfolio">Our Works<br>制作実績</a></li>
+				<li class="menu"><a href="/price">Price<br>価格</a></li>
+				<li class="menu"><a href="/postMail" id="headerColorYellow">Contact Us<br>お問い合わせ</a></li>
+			</ul>
+			<ul class="displayFlex spMenus">
+				<li class="menu"><a href="/">ホーム</a></li>
+				<li class="menu"><a href="/#strongPoint">特徴</a></li>
+				<li class="menu"><a href="/#service">サービス</a></li>
+				<li class="menu"><a href="/portfolio">制作実績</a></li>
+				<li class="menu"><a href="/price">価格</a></li>
+				<li class="menu"><a href="/postMail">お問い合わせ</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div id="body">
+		<div style="padding-top: 100px;">
+			<h2>お問い合わせフォーム &gt; 送信完了</h2>
+			<div id="form-tbl">
+				<p class="msg">
+					ご利用ありがとうございました。<br>
+					メール送信は正常に完了しました。
+				</p>
+				<p class="btn">
+					<input type="button" value="トップに戻る" onclick="window.open('!back!','_top')">
+				</p>
+			</div>
+		</div>
 	</div>
-</div>
-	
-<footer class="themeColorBackGround textAlignCenter">
-    <div class="textAlignCenter colorWhite">
-      Copyright &copy; 2019 Lumen Studio powered by BASE, Inc.
-    </div>
-    <a href="/postMail" class="colorWhite">
-      <div class="textAlignCenter colorWhite displayInlineblock">
-        ????????
-      </div>
-    </a>
-  </footer>
-	
-<script>
-    const stalker = document.querySelector('#stalker');
 
-    document.addEventListener('mousemove', function (e) {
-      stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
-    });
+	<footer class="backgroundGray">
+		<div class="container">
+			<div class="colorWhite paddingTopBottom10px">
+				Copyright 2019 Lumen Studio powered by BASE, Inc.
+			</div>
+			<a href="/postMail" class="colorWhite">
+				<div class="textAlignCenter colorWhite displayInlineblock textDecorationUnderLine">
+					お問い合わせ
+				</div>
+			</a>
+		</div>
+	</footer>
 
-    const linkElem = document.querySelectorAll('a');
-    for (let i = 0; i < linkElem.length; i++) {
-      linkElem[i].addEventListener('mouseover', function (e) {
-        stalker.classList.add('linkHover');
-      });
-      linkElem[i].addEventListener('mouseout', function (e) {
-        hovFlag = false;
-        stalker.classList.remove('linkHover');
-      });
-    };
-  </script>
-	
 </body>
+
 </html>

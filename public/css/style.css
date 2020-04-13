@@ -24,8 +24,119 @@ li {
     cursor: none;
 } */
 
+#headerColorYellow {
+    color: #FAE20F;
+}
+
 .writingModeVerticalLr {
     writing-mode: vertical-lr;
+}
+
+.menu > li {
+    float: left;
+    width: 25%; /* グローバルナビ4つの場合 */
+    height: 50px;
+    line-height: 50px;
+    background: rgb(29, 33, 19);
+}
+
+.menu > li.menu__single {
+    position: relative;
+}
+
+li.menu__single ul.menu__second-level {
+    position: absolute;
+    top: 90px;
+    width: 15%;
+    background: rgba(100, 100, 100, 0.3);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+li.menu__single:hover ul.menu__second-level {
+    top: 90px;
+    visibility: visible;
+    opacity: 1;
+}
+
+ul.menu__second-level {
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+ul.menu__third-level {
+    visibility: hidden;
+    opacity: 0;
+}
+
+ul.menu__fourth-level {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu > li:hover {
+    background: #072A24;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.menu__second-level li {
+    line-height: 40px;
+}
+
+.menu__third-level li {
+    border-top: 1px solid #111;
+}
+
+.menu__second-level li a:hover {
+    background: #111;
+}
+
+.menu__third-level li a:hover {
+    background: #2a1f1f;
+}
+
+.menu__fourth-level li a:hover {
+    background: #1d0f0f;
+}
+
+/* 下矢印 */
+.init-bottom:after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 0 0 15px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* floatクリア */
+.menu:before,
+.menu:after {
+    content: " ";
+    display: table;
+}
+
+.menu:after {
+    clear: both;
+}
+
+.menu {
+    *zoom: 1;
+}
+
+.changeBackgroundColorWhite {
+    transition: 0.5s;
+}
+
+.changeBackgroundColorWhite:hover {
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
 }
 
 .fixedToContactButton {

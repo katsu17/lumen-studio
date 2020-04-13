@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148326519-1"></script>
@@ -38,10 +39,18 @@
       <ul class="flexCenter textAlignCenter pcMenus">
         <li class="menu"><a href="/">Home<br>ホーム</a></li>
         <li class="menu"><a href="/#strongPoint">About Us<br>ルーメンスタジオ</a></li>
-        <li class="menu"><a href="/#service">Service<br>サービス</a></li>
+        <li class="menu flexDirectiionColumn menu__single">
+          <a href="/service">Service<br>サービス</a>
+          <ul class="menu__second-level">
+            <li><a href="/animationVideo">アニメーション動画製作</a></li>
+            <li><a href="/liveActionVideo">実写動画製作</a></li>
+            <li><a href="/interviewVideo">ブランディング動画製作</a></li>
+            <li><a href="/snsVideo">SNS用動画製作</a></li>
+          </ul>
+        </li>
         <li class="menu"><a href="/portfolio">Our Works<br>制作実績</a></li>
         <li class="menu"><a href="/price">Price<br>価格</a></li>
-        <li class="menu"><a href="/postMail">Contact Us<br>お問い合わせ</a></li>
+        <li class="menu"><a href="/postMail" id="headerColorYellow">Contact Us<br>お問い合わせ</a></li>
       </ul>
       <ul class="displayFlex spMenus">
         <li class="menu"><a href="/">ホーム</a></li>
@@ -90,26 +99,28 @@
       <div id="body">
         <form action="./postmail.cgi" method="post" id="contactFormWrap">
           <h2 id="heading" class="paddingLeft16px">お問い合わせ</h2>
-          <input type="hidden" name="need" value="name company position email phoneNumber message checkbox">
+          <input type="hidden" name="need" value="name email phoneNumber message checkbox">
           <input type="hidden" name="sort" value="name company position email phoneNumber message checkbox">
           <input type="hidden" name="match" value="email email2">
           <div id="form-tbl">
-            <div class="paddingTopBottom5px">
-              <div class="paddingLeft16px"><input type="text" required　name="name" size="35" placeholder="お名前" class=" contactFormName"></div>
-            </div>
-            <div class="paddingTopBottom5px">
-              <div class="paddingLeft16px"><input type="text" name="company" size="35" placeholder="会社名" class="paddingLeft16px contactFormName"></div>
-            </div>
             <div class="paddingTopBottom5px displayFlexAlignItemsCenter"> <span class="paddingLeftRight5px">*</span>
-              <input type="text" required name="position" size="35" placeholder="役職" class="contactFormName"></div>
+              <input type="text" required name="name" size="35" placeholder="お名前" class="contactFormName">
+            </div>
+            <div class="paddingTopBottom5px">
+              <div class="paddingLeft16px"><input type="text" name="company" size="35" placeholder="会社名" class="contactFormName"></div>
+            </div>
+            <div class="paddingTopBottom5px">
+                <div class="paddingLeft16px"><input type="text" name="position" size="35" placeholder="役職" class="contactFormName"></div>
+            </div>
             <div class="paddingTopBottom5px displayFlexAlignItemsCenter"> <span class="paddingLeftRight5px">*</span>
               <input type="email" required name="email" size="35" placeholder="Eメールアドレス" class="contactFormName"></div>
             <div class="paddingTopBottom5px displayFlexAlignItemsCenter"> <span class="paddingLeftRight5px">*</span>
               <input type="email" required name="email2" size="35" placeholder="確認用Eメールアドレス" class="contactFormName"></div>
             <div class="paddingTopBottom5px displayFlexAlignItemsCenter"> <span class="paddingLeftRight5px">*</span>
               <input type="number" required name="phoneNumber" size="35" placeholder="電話番号" class="contactFormName"></div>
-            <div class="paddingTopBottom5px displayFlex"> <span class="paddingLeftRight5px">*</span> <textarea type="text"
-                required name="message" rows="7" cols="55" placeholder="問合せ内容" id=" messageForm"></textarea></div>
+            <div class="paddingTopBottom5px displayFlex"> <span class="paddingLeftRight5px">*</span>
+              <textarea type="text" required name="message" rows="7" cols="55" placeholder="問合せ内容" id=" messageForm"></textarea>
+            </div>
             <form action="">
               <label for="" id="spLabel" class="displayFlexAlignItemsCenter">
                 <span class="paddingLeftRight5px">*</span>

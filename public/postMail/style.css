@@ -5,6 +5,14 @@
 /* for body */
 
 
+.invalid {
+	border-color: red; 
+}
+
+.vaild {
+	border-color: rgba(0, 166, 255, 7); 
+}
+
 #themeColor {
     color: rgba(8, 114, 158, 1);
 }
@@ -137,18 +145,21 @@ textarea {
   font-size: 19px;
 }
 
+/* input[type=text]:required,
+input[type=email]:required,
+input[type=number]:required,
+textarea:required {
+	border: #dd0000 solid 1px;
+} */
+
 input[type=text]:valid,
 input[type=email]:valid,
+input[type=number]:valid,
 textarea:valid {
-	color: #333;
-	border-color: #ccc;
-	background: #fff;
+	border: 1px solid rgba(0, 166, 255, 7);
 }
 
-input, textarea,
-input[type=text]:valid,
-input[type=email]:valid,
-textarea:valid {
+input, textarea {
 	padding: 10px;
 	width: 437px;
 	margin-bottom: 5px;
@@ -160,13 +171,6 @@ textarea:valid {
 	color: #aaa;
 	border-radius: 5px;
 	/* background-color: rgba(8, 114, 158, 1); */
-}
-
-input[type=text]:required,
-input[type=email]:required,
-input[type=email]:invalid,
-textarea:required {
-	border: #dd0000 solid 1px;
 }
 
 li a {
