@@ -1,4 +1,3 @@
-
 # モジュール宣言/変数初期化
 use strict;
 my %cf;
@@ -80,7 +79,7 @@ $cf{version} = 'postmail v9.01';
 $cf{kcode} = 'sjis';
 
 # 送信先メールアドレス
-$cf{mailto} = 'lumen-studio@base-corp.co.jp','enegoli17@gmail.com';
+$cf{mailto} = 'lumen-studio@base-corp.co.jp';
 
 # sendmailのパス【サーバパス】
 # → プロバイダの指定を確認のこと
@@ -113,7 +112,7 @@ $cf{replace} = {
 	'comment' => 'コメント',
 	'phoneNumber' => '電話番号',
 	'message' => 'メッセージ',
-	'checkbox' => 'プライバシーポリシーに同意'
+	'checkbox' => 'プライバシーポリシーに同意',
 	};
 
 # 送信者へのメール返信
@@ -157,7 +156,7 @@ $cf{sestime} = 5;
 $cf{reload} = 0;
 
 # 送信後の戻り先【URLパス】
-$cf{back} = '/lumen-studio.sakura.ne.jp';
+$cf{back} = '/';
 
 # フォームのname値の正当性をチェックする（セキュリティ強化策）
 # → 半角文字は英数字、アンダーバー、ハイフンはOK。全角は全てOK
